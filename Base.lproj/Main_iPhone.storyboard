@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="7SO-6D-m7V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="D5R-A1-5d8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -55,7 +55,6 @@
                     <connections>
                         <outlet property="tfLogin" destination="z11-vd-kKp" id="OlK-Kk-hHv"/>
                         <outlet property="tfPassword" destination="g0s-dx-ik1" id="ei6-K6-qb1"/>
-                        <segue destination="hRB-bP-0a9" kind="push" identifier="logintodashboard" id="qNm-zR-Wbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -140,27 +139,90 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hau-JE-vYA">
-                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="eS4-PF-BvO"/>
+                        <barButtonItem key="leftBarButtonItem" title="My Menu" id="ii6-pS-Vsa">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="hRB-bP-0a9" id="9oV-5D-86c"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="My Drive" id="eS4-PF-BvO">
+                            <connections>
+                                <action selector="presentRightMenuViewController:" destination="hRB-bP-0a9" id="Ye9-gc-BiR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLG-Ty-nVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488" y="-262"/>
+            <point key="canvasLocation" x="445" y="-675"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fFL-4z-nMh">
             <objects>
-                <navigationController definesPresentationContext="YES" id="7SO-6D-m7V" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="contentViewController" definesPresentationContext="YES" id="7SO-6D-m7V" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jSm-99-2Bg">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="eGZ-q9-XSK"/>
+                        <segue destination="hRB-bP-0a9" kind="relationship" relationship="rootViewController" id="BzW-ck-m6W"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9S-26-fo5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-103" y="-675"/>
+        </scene>
+        <!--Root View Controller - Root-->
+        <scene sceneID="O06-EK-faM">
+            <objects>
+                <viewController title="Root" id="D5R-A1-5d8" customClass="GTRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RlL-OX-ZIf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q6o-Ly-ewF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GrX-GM-WoX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrd-Pl-T9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="-668"/>
+        </scene>
+        <!--My Menu View Controller-->
+        <scene sceneID="Ye9-z8-dD8">
+            <objects>
+                <viewController storyboardIdentifier="mymenucontroller" id="6dM-2A-sQZ" customClass="GTMyMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZCQ-mk-nsW"/>
+                        <viewControllerLayoutGuide type="bottom" id="q8t-ZI-DID"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hfA-oR-euD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U23-B4-5Av" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="-1511"/>
+        </scene>
+        <!--Drive Menu View Controller - Drive Menu-->
+        <scene sceneID="iaG-Nl-xod">
+            <objects>
+                <viewController storyboardIdentifier="drivemenucontroller" title="Drive Menu" id="Owp-op-Fxc" customClass="GTDriveMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hDI-qe-OyK"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Lm-7l-62Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HYH-6l-OL0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ws-UX-v0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="-1511"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

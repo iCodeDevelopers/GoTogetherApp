@@ -19,3 +19,4 @@
 #import "MBProgressHUD.h"
 #import "ObjCHiredis.h"
 #import "GTRedisObject.h"
+#import "RESideMenu.h"
