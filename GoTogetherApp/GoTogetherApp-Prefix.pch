@@ -16,3 +16,4 @@
 #endif
 
 #define REDIS [GTRedisObject redisObject]
+#define DASHBOARD_BG_COLOR [UIColor colorWithRed:193/255.f green:126/255.f blue:18/255.f alpha:1.f]

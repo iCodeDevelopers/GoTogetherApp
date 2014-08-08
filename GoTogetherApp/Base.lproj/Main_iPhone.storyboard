@@ -126,45 +126,15 @@
             </objects>
             <point key="canvasLocation" x="469" y="489"/>
         </scene>
-        <!--Dashboard View Controller - Dashboard-->
-        <scene sceneID="DiL-yM-CRN">
-            <objects>
-                <viewController storyboardIdentifier="dashboard" title="Dashboard" id="hRB-bP-0a9" customClass="GTDashboardViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hUo-bC-I5t"/>
-                        <viewControllerLayoutGuide type="bottom" id="ccy-VR-cbn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="R3a-kK-3x2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Hau-JE-vYA">
-                        <barButtonItem key="leftBarButtonItem" title="My Menu" id="ii6-pS-Vsa">
-                            <connections>
-                                <action selector="presentLeftMenuViewController:" destination="hRB-bP-0a9" id="9oV-5D-86c"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="My Drive" id="eS4-PF-BvO">
-                            <connections>
-                                <action selector="presentRightMenuViewController:" destination="hRB-bP-0a9" id="Ye9-gc-BiR"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bLG-Ty-nVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="445" y="-675"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="fFL-4z-nMh">
             <objects>
-                <navigationController storyboardIdentifier="contentViewController" definesPresentationContext="YES" id="7SO-6D-m7V" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="dashboard" definesPresentationContext="YES" id="7SO-6D-m7V" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jSm-99-2Bg">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="hRB-bP-0a9" kind="relationship" relationship="rootViewController" id="BzW-ck-m6W"/>
+                        <segue destination="GMR-xQ-OdA" kind="relationship" relationship="rootViewController" id="5lD-Hb-Fbb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9S-26-fo5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,6 +239,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lve-NN-jxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1777" y="-1511"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="o13-ou-WPo">
+            <objects>
+                <tableViewController id="GMR-xQ-OdA" customClass="GTDashboardViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9un-1h-acD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="GMR-xQ-OdA" id="b02-2N-s0C"/>
+                            <outlet property="delegate" destination="GMR-xQ-OdA" id="3KA-Rr-TAU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="jMQ-7r-7lC">
+                        <barButtonItem key="leftBarButtonItem" title="My Menu" id="Ucf-AD-p3n">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="GMR-xQ-OdA" id="0jG-ij-JKh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="My Drive" id="OoD-Kw-sg7">
+                            <connections>
+                                <action selector="presentRightMenuViewController:" destination="GMR-xQ-OdA" id="GGe-Zr-kIS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQN-Iz-OnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="-660"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GTDashboardViewController : UIViewController
+@interface GTDashboardViewController : UITableViewController
 
 @end

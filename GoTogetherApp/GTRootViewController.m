@@ -23,7 +23,7 @@
 	self.contentViewShadowRadius = 12;
 	self.contentViewShadowEnabled = YES;
 
-	self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentViewController"];
+	self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"dashboard"];
 	self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"mymenucontroller"];
 	self.rightMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"drivemenucontroller"];
 	self.view.backgroundColor = [UIColor colorWithRed:137/255.f green:183/255.f blue:226/255.f alpha:1.f];
