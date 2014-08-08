@@ -43,15 +43,33 @@
 {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	switch (indexPath.row) {
-		case 0:
-			[self.sideMenuViewController hideMenuViewController];
+		case 0: //Dashboard
+			[self presentMenu:@"dashboard"];
 			break;
-		case 1:
-			[self.sideMenuViewController hideMenuViewController];
+		case 1: //Profile
+			[self presentMenu:@"profile"];
+			break;
+
+		case 2: //Settings
+			[self presentMenu:@"settings"];
+			break;
+		case 3: //Logout
 			break;
 		default:
 			break;
 	}
+
+	[self.sideMenuViewController hideMenuViewController];
+}
+
+- (void)presentMenu:(NSString *)menu
+{
+	if (!menu) {
+		return;
+	}
+
+	UINavigationController *navController =  [self.storyboard instantiateViewControllerWithIdentifier:menu];
+	[self.sideMenuViewController setContentViewController:navController animated:YES ];
 }
 
 #pragma mark -

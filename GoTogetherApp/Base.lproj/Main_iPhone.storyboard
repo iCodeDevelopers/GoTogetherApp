@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="D5R-A1-5d8">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -128,7 +129,7 @@
         <!--Dashboard View Controller - Dashboard-->
         <scene sceneID="DiL-yM-CRN">
             <objects>
-                <viewController title="Dashboard" id="hRB-bP-0a9" customClass="GTDashboardViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dashboard" title="Dashboard" id="hRB-bP-0a9" customClass="GTDashboardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hUo-bC-I5t"/>
                         <viewControllerLayoutGuide type="bottom" id="ccy-VR-cbn"/>
@@ -223,6 +224,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ws-UX-v0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1002" y="-1511"/>
+        </scene>
+        <!--Navigation Controller - SettingsNav-->
+        <scene sceneID="6eQ-ad-dKW">
+            <objects>
+                <navigationController storyboardIdentifier="settings" title="SettingsNav" definesPresentationContext="YES" id="QT7-EL-hRt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xdj-ay-8Bk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FZb-B2-ytC" kind="relationship" relationship="rootViewController" id="EE9-8r-C54"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6q-8E-hEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="-1511"/>
+        </scene>
+        <!--Settings - Settings-->
+        <scene sceneID="Dmf-YR-7Mp">
+            <objects>
+                <tableViewController title="Settings" id="FZb-B2-ytC" customClass="BAMSettings" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="DB6-87-KVP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="FZb-B2-ytC" id="M5P-aJ-lYu"/>
+                            <outlet property="delegate" destination="FZb-B2-ytC" id="zt5-gi-UDc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6DU-gS-hNB">
+                        <barButtonItem key="leftBarButtonItem" title="My Menu" id="yOW-dH-xVV">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="FZb-B2-ytC" id="PZG-CZ-SQE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="My Drive" id="NQ1-HK-c0k">
+                            <connections>
+                                <action selector="presentRightMenuViewController:" destination="FZb-B2-ytC" id="QOC-Ws-fSK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lve-NN-jxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="-1511"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
