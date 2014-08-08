@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "lib/redis/ObjCHiredis.h"
 
 @interface GTRedisObject : ObjCHiredis
 

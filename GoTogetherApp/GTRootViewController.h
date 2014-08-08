@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "lib/RESideMenu/RESideMenu.h"
 
 @interface GTRootViewController : RESideMenu <RESideMenuDelegate>
 

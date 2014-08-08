@@ -7,6 +7,7 @@
 //
 
 #import "GTRegisterViewController.h"
+#import "GTRedisObject.h"
 
 @interface GTRegisterViewController ()
 

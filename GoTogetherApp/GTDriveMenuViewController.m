@@ -89,7 +89,7 @@
 	}
 
 	NSArray *titles = @[@"Add Plan", @"Search Ride", @"Messages", @"Cost"];
-	NSArray *images = @[@"plan", @"messages", @"cost"];
+	NSArray *images = @[@"plan", @"searchride", @"messages", @"cost"];
 	cell.textLabel.text = titles[indexPath.row];
 	cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
 

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D680B5281993B6C40040B305 /* async.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51A1993B6C40040B305 /* async.c */; };
+		D680B5291993B6C40040B305 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51C1993B6C40040B305 /* dict.c */; };
+		D680B52A1993B6C40040B305 /* hiredis.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51F1993B6C40040B305 /* hiredis.c */; };
+		D680B52B1993B6C40040B305 /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B5211993B6C40040B305 /* net.c */; };
+		D680B52C1993B6C40040B305 /* sds.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B5231993B6C40040B305 /* sds.c */; };
+		D680B52D1993B6C40040B305 /* ObjCHiredis.m in Sources */ = {isa = PBXBuildFile; fileRef = D680B5271993B6C40040B305 /* ObjCHiredis.m */; };
 		D699239C19939A12006A7DCC /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D699239719939A12006A7DCC /* RECommonFunctions.m */; };
 		D699239D19939A12006A7DCC /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D699239919939A12006A7DCC /* RESideMenu.m */; };
 		D699239E19939A12006A7DCC /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D699239B19939A12006A7DCC /* UIViewController+RESideMenu.m */; };
@@ -31,8 +37,6 @@
 		D6E496CC19866B5E00480AEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496AB19866B5E00480AEE /* UIKit.framework */; };
 		D6E496D419866B5E00480AEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6E496D219866B5E00480AEE /* InfoPlist.strings */; };
 		D6E496D619866B5E00480AEE /* GoTogetherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E496D519866B5E00480AEE /* GoTogetherAppTests.m */; };
-		D6E496E819866D3F00480AEE /* libObjCHiredis_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496E119866D3F00480AEE /* libObjCHiredis_iOS.a */; };
-		D6E496E919866D3F00480AEE /* libObjCHiredis_Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496E219866D3F00480AEE /* libObjCHiredis_Simulator.a */; };
 		D6E496ED1986751800480AEE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E496EC1986751800480AEE /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D680B51A1993B6C40040B305 /* async.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = async.c; sourceTree = "<group>"; };
+		D680B51B1993B6C40040B305 /* async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async.h; sourceTree = "<group>"; };
+		D680B51C1993B6C40040B305 /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dict.c; sourceTree = "<group>"; };
+		D680B51D1993B6C40040B305 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		D680B51E1993B6C40040B305 /* fmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmacros.h; sourceTree = "<group>"; };
+		D680B51F1993B6C40040B305 /* hiredis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hiredis.c; sourceTree = "<group>"; };
+		D680B5201993B6C40040B305 /* hiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hiredis.h; sourceTree = "<group>"; };
+		D680B5211993B6C40040B305 /* net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net.c; sourceTree = "<group>"; };
+		D680B5221993B6C40040B305 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		D680B5231993B6C40040B305 /* sds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sds.c; sourceTree = "<group>"; };
+		D680B5241993B6C40040B305 /* sds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sds.h; sourceTree = "<group>"; };
+		D680B5251993B6C40040B305 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		D680B5261993B6C40040B305 /* ObjCHiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCHiredis.h; sourceTree = "<group>"; };
+		D680B5271993B6C40040B305 /* ObjCHiredis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCHiredis.m; sourceTree = "<group>"; };
 		D699239619939A12006A7DCC /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		D699239719939A12006A7DCC /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		D699239819939A12006A7DCC /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -85,10 +103,6 @@
 		D6E496D119866B5E00480AEE /* GoTogetherAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoTogetherAppTests-Info.plist"; sourceTree = "<group>"; };
 		D6E496D319866B5E00480AEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6E496D519866B5E00480AEE /* GoTogetherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoTogetherAppTests.m; sourceTree = "<group>"; };
-		D6E496E119866D3F00480AEE /* libObjCHiredis_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libObjCHiredis_iOS.a; sourceTree = "<group>"; };
-		D6E496E219866D3F00480AEE /* libObjCHiredis_Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libObjCHiredis_Simulator.a; sourceTree = "<group>"; };
-		D6E496E619866D3F00480AEE /* hiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hiredis.h; sourceTree = "<group>"; };
-		D6E496E719866D3F00480AEE /* ObjCHiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCHiredis.h; sourceTree = "<group>"; };
 		D6E496EB1986751800480AEE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		D6E496EC1986751800480AEE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,9 +113,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E496AA19866B5E00480AEE /* CoreGraphics.framework in Frameworks */,
-				D6E496E919866D3F00480AEE /* libObjCHiredis_Simulator.a in Frameworks */,
 				D6E496AC19866B5E00480AEE /* UIKit.framework in Frameworks */,
-				D6E496E819866D3F00480AEE /* libObjCHiredis_iOS.a in Frameworks */,
 				D6E496A819866B5E00480AEE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +131,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D680B5181993B6C40040B305 /* redis */ = {
+			isa = PBXGroup;
+			children = (
+				D680B5191993B6C40040B305 /* Hiredis */,
+				D680B5261993B6C40040B305 /* ObjCHiredis.h */,
+				D680B5271993B6C40040B305 /* ObjCHiredis.m */,
+			);
+			path = redis;
+			sourceTree = "<group>";
+		};
+		D680B5191993B6C40040B305 /* Hiredis */ = {
+			isa = PBXGroup;
+			children = (
+				D680B51A1993B6C40040B305 /* async.c */,
+				D680B51B1993B6C40040B305 /* async.h */,
+				D680B51C1993B6C40040B305 /* dict.c */,
+				D680B51D1993B6C40040B305 /* dict.h */,
+				D680B51E1993B6C40040B305 /* fmacros.h */,
+				D680B51F1993B6C40040B305 /* hiredis.c */,
+				D680B5201993B6C40040B305 /* hiredis.h */,
+				D680B5211993B6C40040B305 /* net.c */,
+				D680B5221993B6C40040B305 /* net.h */,
+				D680B5231993B6C40040B305 /* sds.c */,
+				D680B5241993B6C40040B305 /* sds.h */,
+				D680B5251993B6C40040B305 /* util.h */,
+			);
+			path = Hiredis;
+			sourceTree = "<group>";
+		};
 		D699239519939A12006A7DCC /* RESideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,11 +222,11 @@
 				D6D00FAE1988FDBB00FBBDF1 /* GTRegisterViewController.m */,
 				D6D00FB01988FDEE00FBBDF1 /* GTDashboardViewController.h */,
 				D6D00FB11988FDEE00FBBDF1 /* GTDashboardViewController.m */,
+				D6D00FB3198906E200FBBDF1 /* GTRedisObject.h */,
+				D6D00FB4198906E200FBBDF1 /* GTRedisObject.m */,
 				D6E496C219866B5E00480AEE /* Images.xcassets */,
 				D6E496DF19866D3F00480AEE /* lib */,
 				D6E496AE19866B5E00480AEE /* Supporting Files */,
-				D6D00FB3198906E200FBBDF1 /* GTRedisObject.h */,
-				D6D00FB4198906E200FBBDF1 /* GTRedisObject.m */,
 			);
 			path = GoTogetherApp;
 			sourceTree = "<group>";
@@ -222,46 +263,11 @@
 		D6E496DF19866D3F00480AEE /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				D680B5181993B6C40040B305 /* redis */,
 				D699239519939A12006A7DCC /* RESideMenu */,
 				D6E496EA1986751800480AEE /* hud */,
-				D6E496E019866D3F00480AEE /* redis */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		D6E496E019866D3F00480AEE /* redis */ = {
-			isa = PBXGroup;
-			children = (
-				D6E496E119866D3F00480AEE /* libObjCHiredis_iOS.a */,
-				D6E496E219866D3F00480AEE /* libObjCHiredis_Simulator.a */,
-				D6E496E319866D3F00480AEE /* usr */,
-			);
-			path = redis;
-			sourceTree = "<group>";
-		};
-		D6E496E319866D3F00480AEE /* usr */ = {
-			isa = PBXGroup;
-			children = (
-				D6E496E419866D3F00480AEE /* local */,
-			);
-			path = usr;
-			sourceTree = "<group>";
-		};
-		D6E496E419866D3F00480AEE /* local */ = {
-			isa = PBXGroup;
-			children = (
-				D6E496E519866D3F00480AEE /* include */,
-			);
-			path = local;
-			sourceTree = "<group>";
-		};
-		D6E496E519866D3F00480AEE /* include */ = {
-			isa = PBXGroup;
-			children = (
-				D6E496E619866D3F00480AEE /* hiredis.h */,
-				D6E496E719866D3F00480AEE /* ObjCHiredis.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 		D6E496EA1986751800480AEE /* hud */ = {
@@ -380,11 +386,17 @@
 				D6E496B819866B5E00480AEE /* GTAppDelegate.m in Sources */,
 				D6E496ED1986751800480AEE /* MBProgressHUD.m in Sources */,
 				D6D00FB5198906E200FBBDF1 /* GTRedisObject.m in Sources */,
+				D680B52A1993B6C40040B305 /* hiredis.c in Sources */,
 				D699239E19939A12006A7DCC /* UIViewController+RESideMenu.m in Sources */,
 				D69923A519939A38006A7DCC /* GTMyMenuViewController.m in Sources */,
+				D680B52B1993B6C40040B305 /* net.c in Sources */,
 				D699239D19939A12006A7DCC /* RESideMenu.m in Sources */,
 				D69923A419939A38006A7DCC /* GTDriveMenuViewController.m in Sources */,
 				D699239C19939A12006A7DCC /* RECommonFunctions.m in Sources */,
+				D680B52D1993B6C40040B305 /* ObjCHiredis.m in Sources */,
+				D680B52C1993B6C40040B305 /* sds.c in Sources */,
+				D680B5291993B6C40040B305 /* dict.c in Sources */,
+				D680B5281993B6C40040B305 /* async.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,8 +486,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -507,7 +524,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -517,16 +539,21 @@
 		D6E496DA19866B5F00480AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoTogetherApp/GoTogetherApp-Prefix.pch";
-				INFOPLIST_FILE = "GoTogetherApp/GoTogetherApp-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GoTogetherApp/lib/redis",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
+				INFOPLIST_FILE = "GoTogetherApp/GoTogetherApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -534,16 +561,21 @@
 		D6E496DB19866B5F00480AEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoTogetherApp/GoTogetherApp-Prefix.pch";
-				INFOPLIST_FILE = "GoTogetherApp/GoTogetherApp-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GoTogetherApp/lib/redis",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
+				INFOPLIST_FILE = "GoTogetherApp/GoTogetherApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

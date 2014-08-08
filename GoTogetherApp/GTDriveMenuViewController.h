@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "lib/RESideMenu/RESideMenu.h"
 
 @interface GTDriveMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, RESideMenuDelegate>
 

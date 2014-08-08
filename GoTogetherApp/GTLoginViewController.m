@@ -7,6 +7,8 @@
 //
 
 #import "GTLoginViewController.h"
+#import "lib/hud/MBProgressHUD.h"
+#import "GTRedisObject.h"
 
 @interface GTLoginViewController ()
 
