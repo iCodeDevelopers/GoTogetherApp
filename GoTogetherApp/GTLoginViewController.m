@@ -24,15 +24,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
 	[super viewDidAppear:animated];
-	
-	MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
-	[HUD setLabelText:@"Connecting..."];
-	[self.navigationController.view addSubview:HUD];
-
-	[HUD showAnimated:YES whileExecutingBlock:^{
-		[REDIS connect];
-	} completionBlock:^{
-	}];
 }
 
 

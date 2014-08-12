@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GTRegisterViewController : UIViewController
+@interface GTRegisterViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UITextField *tfUserID;
 @property (weak, nonatomic) IBOutlet UITextField *tfFirstName;
 @property (weak, nonatomic) IBOutlet UITextField *tfLastName;

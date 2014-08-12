@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D670DF9A199A44EC000F0640 /* database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D670DF98199A44EC000F0640 /* database.xcdatamodeld */; };
 		D680B5281993B6C40040B305 /* async.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51A1993B6C40040B305 /* async.c */; };
 		D680B5291993B6C40040B305 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51C1993B6C40040B305 /* dict.c */; };
 		D680B52A1993B6C40040B305 /* hiredis.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51F1993B6C40040B305 /* hiredis.c */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D670DF99199A44EC000F0640 /* database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = database.xcdatamodel; sourceTree = "<group>"; };
 		D680B51A1993B6C40040B305 /* async.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = async.c; sourceTree = "<group>"; };
 		D680B51B1993B6C40040B305 /* async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async.h; sourceTree = "<group>"; };
 		D680B51C1993B6C40040B305 /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dict.c; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D670DF97199A44AB000F0640 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D670DF98199A44EC000F0640 /* database.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D680B5181993B6C40040B305 /* redis */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +269,7 @@
 		D6E496AD19866B5E00480AEE /* GoTogetherApp */ = {
 			isa = PBXGroup;
 			children = (
+				D670DF97199A44AB000F0640 /* Models */,
 				D686DA991994E1C700622C1D /* Dashboard */,
 				D686DA891994ABF500622C1D /* Settings */,
 				D69923A719939A61006A7DCC /* GTRootViewController.h */,
@@ -452,6 +463,7 @@
 				D699239D19939A12006A7DCC /* RESideMenu.m in Sources */,
 				D69923A419939A38006A7DCC /* GTDriveMenuViewController.m in Sources */,
 				D699239C19939A12006A7DCC /* RECommonFunctions.m in Sources */,
+				D670DF9A199A44EC000F0640 /* database.xcdatamodeld in Sources */,
 				D680B52D1993B6C40040B305 /* ObjCHiredis.m in Sources */,
 				D686DA971994CDC200622C1D /* BFPaperTableViewCell.m in Sources */,
 				D680B52C1993B6C40040B305 /* sds.c in Sources */,
@@ -711,6 +723,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D670DF98199A44EC000F0640 /* database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D670DF99199A44EC000F0640 /* database.xcdatamodel */,
+			);
+			currentVersion = D670DF99199A44EC000F0640 /* database.xcdatamodel */;
+			path = database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D6E4969C19866B5E00480AEE /* Project object */;
 }

@@ -7,6 +7,8 @@
 //
 
 #import "GTDashboardViewController.h"
+#import "MBProgressHUD.h"
+#import "GTRedisObject.h"
 
 @interface GTDashboardViewController ()
 
@@ -18,6 +20,39 @@
 {
 	[self.view setBackgroundColor:DASHBOARD_BG_COLOR];
 	[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+	[HUD setLabelText:@"Connecting..."];
+	[self.navigationController.view addSubview:HUD];
+
+	[HUD showAnimated:YES whileExecutingBlock:^{
+		[REDIS connect];
+	} completionBlock:^{
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+		NSString *userAlreadySigned = [defaults objectForKey:@"UserAlreadySigned"];
+
+		if (!userAlreadySigned) {
+			dispatch_async(dispatch_get_main_queue(), ^(void){
+				[self performSegueWithIdentifier:@"showLogin" sender:self];
+			});
+		}
+	}];
+
+//	dispatch_queue_t backgroundQueue = dispatch_queue_create("com.susapra.letsgotogether", NULL);
+//
+//    dispatch_async(backgroundQueue, ^{
+//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//		NSString *userAlreadySigned = [defaults objectForKey:@"UserAlreadySigned"];
+//
+//		if (!userAlreadySigned) {
+//			dispatch_async(dispatch_get_main_queue(), ^(void){
+//				[self performSegueWithIdentifier:@"showLogin" sender:self];
+//			});
+//		}
+//	});
 }
 
 #pragma mark -
