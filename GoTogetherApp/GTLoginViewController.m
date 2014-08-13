@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+	[self.navigationItem setHidesBackButton:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -64,7 +65,6 @@
 		}
 	} completionBlock:^{
 		if (isSuccessful) {
-			[self performSegueWithIdentifier: @"logintodashboard" sender: self];
 		}
 	}];
 }

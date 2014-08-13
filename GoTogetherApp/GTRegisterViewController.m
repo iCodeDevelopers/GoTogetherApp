@@ -7,10 +7,13 @@
 //
 
 #import "GTRegisterViewController.h"
-#import "GTRedisObject.h"
+#import "UserWorker.h"
+#import "FDTakeController.h"
 
-@interface GTRegisterViewController ()
+@interface GTRegisterViewController () <FDTakeDelegate>
 
+@property (nonatomic, strong) FDTakeController* takeController;
+@property (nonatomic, strong) NSString *imagePath;
 @end
 
 @implementation GTRegisterViewController
@@ -23,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	self.takeController = [[FDTakeController alloc] init];
+    self.takeController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,34 +36,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (IBAction)doRegister:(UIBarButtonItem *)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+	[UserWorker doRegisteration:[NSArray arrayWithObjects:[self.tfUserID.text length]<=0?nil:self.tfUserID.text,
+								  [self.tfPassword.text length]<=0?nil:self.tfPassword.text,
+								  [self.tfConfirmPassword.text length]<=0?nil:self.tfConfirmPassword.text,
+								  self.tfFirstName.text,
+								  self.tfLastName.text,
+								  [NSNumber numberWithBool:YES],
+								  self.imagePath,
+								 nil]];
 }
-*/
 
-- (IBAction)doRegister:(UIBarButtonItem *)sender {
+- (IBAction)doUploadClicked:(id)sender {
+	[self.takeController takePhotoOrChooseFromLibrary];
+}
 
-	//SET users:goku {race: 'sayan', power: 9001}
+#pragma mark FD Delegates
+- (void)takeController:(FDTakeController *)controller didCancelAfterAttempting:(BOOL)madeAttempt
+{
+}
 
-	NSString *command = [NSString stringWithFormat:@"SET users:%@ {firstName: \'%@\', lastName: \'%@\', password: \'%@\'}",
-											 self.tfUserID.text,
-											 self.tfFirstName.text,
-											 self.tfLastName.text,
-											 self.tfPassword.text];
+- (void)takeController:(FDTakeController *)controller gotPhoto:(UIImage *)photo withInfo:(NSDictionary *)info
+{
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
 
-	id retval = [REDIS.redis command:command];
-
-	if ([retval isEqualToString:@"OK"]) {
-    NSLog(@"User regaistered.");
+	self.imagePath =[documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",@"profile"]];
+	NSData *imageData = UIImagePNGRepresentation(photo);
+	if ([imageData writeToFile:self.imagePath atomically:YES]) {
+		NSLog(@"Image saved to %@", self.imagePath);
 	}
 	else {
-		NSLog(@"Error in registeration.");
+		NSLog(@"Image could not saved.");
 	}
+
+    [self.photoView setImage:photo];
 }
+
 @end

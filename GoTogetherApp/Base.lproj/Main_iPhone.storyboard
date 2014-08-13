@@ -96,6 +96,9 @@
                                                     <state key="normal" title="Upload Photo">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="doUploadClicked:" destination="LeO-gy-lh2" eventType="touchUpInside" id="DHX-ef-az2"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -184,7 +187,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Registration" id="qcV-J2-VzG">
-                        <barButtonItem key="leftBarButtonItem" title="Already?" id="rOk-bQ-xI9"/>
+                        <barButtonItem key="leftBarButtonItem" title="Already?" id="rOk-bQ-xI9">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="push" id="f1H-pD-MzZ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Me." id="rda-fZ-htz">
                             <connections>
                                 <action selector="doRegister:" destination="LeO-gy-lh2" id="4GL-NU-rys"/>
@@ -192,6 +199,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="photoView" destination="J5f-9D-Jcj" id="Ftl-d4-qZN"/>
                         <outlet property="tfConfirmPassword" destination="vff-Ff-Mfl" id="nwe-ou-s4e"/>
                         <outlet property="tfFirstName" destination="vj4-Oo-715" id="o9p-z4-uMP"/>
                         <outlet property="tfLastName" destination="1f5-Oj-Yvg" id="vhj-AJ-32l"/>

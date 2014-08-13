@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *tfPassword;
 @property (weak, nonatomic) IBOutlet UITextField *tfConfirmPassword;
 
+@property (weak, nonatomic) IBOutlet UIImageView *photoView;
+
 - (IBAction)doRegister:(UIBarButtonItem *)sender;
+- (IBAction)doUploadClicked:(id)sender;
 
 @end

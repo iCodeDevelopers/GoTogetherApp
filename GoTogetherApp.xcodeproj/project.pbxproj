@@ -14,6 +14,9 @@
 		D680B52B1993B6C40040B305 /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B5211993B6C40040B305 /* net.c */; };
 		D680B52C1993B6C40040B305 /* sds.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B5231993B6C40040B305 /* sds.c */; };
 		D680B52D1993B6C40040B305 /* ObjCHiredis.m in Sources */ = {isa = PBXBuildFile; fileRef = D680B5271993B6C40040B305 /* ObjCHiredis.m */; };
+		D6854CB3199B9144001FB65F /* FDTakeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6854CB2199B9144001FB65F /* FDTakeController.m */; };
+		D6854CB6199B99C9001FB65F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D6854CB5199B99C9001FB65F /* User.m */; };
+		D6854CB9199B99FF001FB65F /* UserWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6854CB8199B99FF001FB65F /* UserWorker.m */; };
 		D686DA881994AAC300622C1D /* BAMSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D686DA871994AAC300622C1D /* BAMSettings.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D686DA8C1994AC1000622C1D /* GTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D686DA8B1994AC1000622C1D /* GTSettingsViewController.m */; };
 		D686DA8E1994B78700622C1D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D686DA8D1994B78700622C1D /* Settings.bundle */; };
@@ -72,6 +75,12 @@
 		D680B5251993B6C40040B305 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		D680B5261993B6C40040B305 /* ObjCHiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCHiredis.h; sourceTree = "<group>"; };
 		D680B5271993B6C40040B305 /* ObjCHiredis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCHiredis.m; sourceTree = "<group>"; };
+		D6854CB1199B9144001FB65F /* FDTakeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTakeController.h; sourceTree = "<group>"; };
+		D6854CB2199B9144001FB65F /* FDTakeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTakeController.m; sourceTree = "<group>"; };
+		D6854CB4199B99C9001FB65F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D6854CB5199B99C9001FB65F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D6854CB7199B99FF001FB65F /* UserWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWorker.h; sourceTree = "<group>"; };
+		D6854CB8199B99FF001FB65F /* UserWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWorker.m; sourceTree = "<group>"; };
 		D686DA861994AAC300622C1D /* BAMSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAMSettings.h; sourceTree = "<group>"; };
 		D686DA871994AAC300622C1D /* BAMSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMSettings.m; sourceTree = "<group>"; };
 		D686DA8A1994AC1000622C1D /* GTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSettingsViewController.h; sourceTree = "<group>"; };
@@ -151,6 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				D670DF98199A44EC000F0640 /* database.xcdatamodeld */,
+				D6854CB4199B99C9001FB65F /* User.h */,
+				D6854CB5199B99C9001FB65F /* User.m */,
+				D6854CB7199B99FF001FB65F /* UserWorker.h */,
+				D6854CB8199B99FF001FB65F /* UserWorker.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +195,15 @@
 				D680B5251993B6C40040B305 /* util.h */,
 			);
 			path = Hiredis;
+			sourceTree = "<group>";
+		};
+		D6854CB0199B9144001FB65F /* FDTake */ = {
+			isa = PBXGroup;
+			children = (
+				D6854CB1199B9144001FB65F /* FDTakeController.h */,
+				D6854CB2199B9144001FB65F /* FDTakeController.m */,
+			);
+			path = FDTake;
 			sourceTree = "<group>";
 		};
 		D686DA851994AAC300622C1D /* Settings */ = {
@@ -327,6 +349,7 @@
 		D6E496DF19866D3F00480AEE /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				D6854CB0199B9144001FB65F /* FDTake */,
 				D686DA921994CDC200622C1D /* PaperCells */,
 				D686DA851994AAC300622C1D /* Settings */,
 				D680B5181993B6C40040B305 /* redis */,
@@ -445,12 +468,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6854CB6199B99C9001FB65F /* User.m in Sources */,
 				D6D00FAF1988FDBB00FBBDF1 /* GTRegisterViewController.m in Sources */,
 				D6E496B419866B5E00480AEE /* main.m in Sources */,
 				D69923A919939A62006A7DCC /* GTRootViewController.m in Sources */,
 				D6E496C119866B5E00480AEE /* GTLoginViewController.m in Sources */,
 				D686DA881994AAC300622C1D /* BAMSettings.m in Sources */,
 				D6E496B819866B5E00480AEE /* GTAppDelegate.m in Sources */,
+				D6854CB3199B9144001FB65F /* FDTakeController.m in Sources */,
 				D6E496ED1986751800480AEE /* MBProgressHUD.m in Sources */,
 				D6D00FB5198906E200FBBDF1 /* GTRedisObject.m in Sources */,
 				D686DA8C1994AC1000622C1D /* GTSettingsViewController.m in Sources */,
@@ -461,6 +486,7 @@
 				D69923A519939A38006A7DCC /* GTMyMenuViewController.m in Sources */,
 				D680B52B1993B6C40040B305 /* net.c in Sources */,
 				D699239D19939A12006A7DCC /* RESideMenu.m in Sources */,
+				D6854CB9199B99FF001FB65F /* UserWorker.m in Sources */,
 				D69923A419939A38006A7DCC /* GTDriveMenuViewController.m in Sources */,
 				D699239C19939A12006A7DCC /* RECommonFunctions.m in Sources */,
 				D670DF9A199A44EC000F0640 /* database.xcdatamodeld in Sources */,
