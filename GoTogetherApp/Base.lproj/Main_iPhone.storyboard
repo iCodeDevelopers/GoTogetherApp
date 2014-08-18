@@ -44,20 +44,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXm-kf-J5W">
-                                <rect key="frame" x="136" y="261" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="doSignin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Djm-Pa-VTY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign In" id="7z9-uZ-HVa"/>
+                    <navigationItem key="navigationItem" title="Sign In" id="7z9-uZ-HVa">
+                        <barButtonItem key="rightBarButtonItem" title="Sign In" id="w6z-BD-dhs">
+                            <connections>
+                                <action selector="doSignin:" destination="vXZ-lx-hvc" id="cF6-iF-ZNb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tfLogin" destination="z11-vd-kKp" id="OlK-Kk-hHv"/>
                         <outlet property="tfPassword" destination="g0s-dx-ik1" id="ei6-K6-qb1"/>
@@ -105,47 +101,10 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="8aH-bR-WIW">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="146" id="hNt-e2-aJI">
-                                        <rect key="frame" x="0.0" y="219" width="320" height="146"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hNt-e2-aJI" id="ytz-td-NTB">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-Oo-715">
-                                                    <rect key="frame" x="10" y="15" width="300" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="LeO-gy-lh2" id="5Rp-MF-XJF"/>
-                                                    </connections>
-                                                </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1f5-Oj-Yvg">
-                                                    <rect key="frame" x="10" y="57" width="300" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
-                                                </textField>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-F1-xST">
-                                                    <rect key="frame" x="10" y="103" width="300" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <segments>
-                                                        <segment title="Male"/>
-                                                        <segment title="Female"/>
-                                                    </segments>
-                                                </segmentedControl>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                             <tableViewSection id="edd-gm-P92">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="146" id="7Ph-X4-DYA">
-                                        <rect key="frame" x="0.0" y="385" width="320" height="146"/>
+                                        <rect key="frame" x="0.0" y="219" width="320" height="146"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Ph-X4-DYA" id="6zr-3y-Qc9">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
@@ -180,6 +139,43 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="8aH-bR-WIW">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="146" id="hNt-e2-aJI">
+                                        <rect key="frame" x="0.0" y="385" width="320" height="146"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hNt-e2-aJI" id="ytz-td-NTB">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-Oo-715">
+                                                    <rect key="frame" x="10" y="15" width="300" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="LeO-gy-lh2" id="5Rp-MF-XJF"/>
+                                                    </connections>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1f5-Oj-Yvg">
+                                                    <rect key="frame" x="10" y="57" width="300" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                </textField>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-F1-xST">
+                                                    <rect key="frame" x="10" y="103" width="300" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <segments>
+                                                        <segment title="Male"/>
+                                                        <segment title="Female"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="LeO-gy-lh2" id="kdx-dn-t3d"/>
@@ -189,7 +185,7 @@
                     <navigationItem key="navigationItem" title="Registration" id="qcV-J2-VzG">
                         <barButtonItem key="leftBarButtonItem" title="Already?" id="rOk-bQ-xI9">
                             <connections>
-                                <segue destination="vXZ-lx-hvc" kind="push" id="f1H-pD-MzZ"/>
+                                <segue destination="vXZ-lx-hvc" kind="push" identifier="login" id="f1H-pD-MzZ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Me." id="rda-fZ-htz">

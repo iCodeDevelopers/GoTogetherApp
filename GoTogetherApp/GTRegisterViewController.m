@@ -9,6 +9,7 @@
 #import "GTRegisterViewController.h"
 #import "UserWorker.h"
 #import "FDTakeController.h"
+#import "GTAppDelegate.h"
 
 @interface GTRegisterViewController () <FDTakeDelegate>
 
@@ -38,14 +39,27 @@
 
 - (IBAction)doRegister:(UIBarButtonItem *)sender
 {
-	[UserWorker doRegisteration:[NSArray arrayWithObjects:[self.tfUserID.text length]<=0?nil:self.tfUserID.text,
-								  [self.tfPassword.text length]<=0?nil:self.tfPassword.text,
-								  [self.tfConfirmPassword.text length]<=0?nil:self.tfConfirmPassword.text,
-								  self.tfFirstName.text,
-								  self.tfLastName.text,
-								  [NSNumber numberWithBool:YES],
-								  self.imagePath,
-								 nil]];
+	[APP_DELEGATE.hud setLabelText:@"Registering..."];
+
+	__block BOOL registrationDone = NO;
+
+	[APP_DELEGATE.hud showAnimated:YES
+			   whileExecutingBlock:^{
+				   registrationDone = 
+				   [UserWorker doRegisteration:[NSArray arrayWithObjects:[self.tfUserID.text length]<=0?nil:self.tfUserID.text,
+												[self.tfPassword.text length]<=0?nil:self.tfPassword.text,
+												[self.tfConfirmPassword.text length]<=0?nil:self.tfConfirmPassword.text,
+												self.tfFirstName.text,
+												self.tfLastName.text,
+												[NSNumber numberWithBool:YES],
+												self.imagePath,
+												nil]];
+			   } completionBlock:^{
+				   if (registrationDone) {
+					   [self performSegueWithIdentifier:@"login" sender:self];
+				   }
+			   }];
+
 }
 
 - (IBAction)doUploadClicked:(id)sender {

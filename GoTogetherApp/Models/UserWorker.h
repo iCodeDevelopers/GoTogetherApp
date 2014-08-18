@@ -10,6 +10,6 @@
 
 @interface UserWorker : NSObject
 
-+ (void)doRegisteration:(NSArray *)inputs;
++ (BOOL)doRegisteration:(NSArray *)inputs;
 
 @end

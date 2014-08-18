@@ -8,15 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "NSManagedObject+JSON.h"
 
 
 @interface User : NSManagedObject
 
 @property (nonatomic, retain) NSString * firstName;
-@property (nonatomic, retain) NSNumber * gender;
+@property (nonatomic, retain) NSString * gender;
 @property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) NSString * photo;
 @property (nonatomic, retain) NSString * userBaseKey;
 @property (nonatomic, retain) NSString * userID;
+@property (nonatomic, retain) NSString * password;
 
 @end

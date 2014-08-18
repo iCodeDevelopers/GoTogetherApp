@@ -19,4 +19,6 @@
 - (void)connect;
 - (void)close;
 
+- (BOOL)executeCommand:(NSString *)command result:(NSString **)result;
+
 @end

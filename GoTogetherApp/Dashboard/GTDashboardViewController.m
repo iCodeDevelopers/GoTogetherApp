@@ -7,7 +7,7 @@
 //
 
 #import "GTDashboardViewController.h"
-#import "MBProgressHUD.h"
+#import "GTAppDelegate.h"
 #import "GTRedisObject.h"
 
 @interface GTDashboardViewController ()
@@ -24,11 +24,9 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-	MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
-	[HUD setLabelText:@"Connecting..."];
-	[self.navigationController.view addSubview:HUD];
+	[APP_DELEGATE.hud setLabelText:@"Connecting..."];
 
-	[HUD showAnimated:YES whileExecutingBlock:^{
+	[APP_DELEGATE.hud showAnimated:YES whileExecutingBlock:^{
 		[REDIS connect];
 	} completionBlock:^{
 		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

@@ -42,6 +42,8 @@
 		[self.redis close];
 		self.redis = nil;
 	}
+	//127.0.0.1:6379
+	//self.redis = [ObjCHiredis redis:@"127.0.0.1" on:[NSNumber numberWithInteger:6379]];
 
 	self.redis = [ObjCHiredis redis:@"pub-redis-10303.us-east-1-1.2.ec2.garantiadata.com"
 																				on:[NSNumber numberWithInteger:10303]];
@@ -62,4 +64,21 @@
 	self.redis = nil;
 }
 
+- (BOOL)executeCommand:(NSString *)command result:(NSString *__autoreleasing *)result
+{
+	BOOL successfull = YES;
+
+	id 	retVal = [self.redis command:command];
+
+	successfull = (retVal != nil);
+
+	if (successfull && result != NULL) {
+		*result = [NSString stringWithFormat:@"%@", retVal];
+	}
+	else {
+		*result = nil;
+	}
+
+	return successfull;
+}
 @end

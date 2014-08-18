@@ -7,7 +7,7 @@
 //
 
 #import "GTLoginViewController.h"
-#import "lib/hud/MBProgressHUD.h"
+#import "GTAppDelegate.h"
 #import "GTRedisObject.h"
 
 @interface GTLoginViewController ()
@@ -38,23 +38,21 @@
 }
 
 - (void)processSignin {
-	MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
-	[HUD setLabelText:@"Signing In..."];
-	[self.navigationController.view addSubview:HUD];
+	[APP_DELEGATE.hud setLabelText:@"Signing In..."];
 
 	__block BOOL isSuccessful = NO;
 
-	[HUD showAnimated:YES whileExecutingBlock:^{
+	[APP_DELEGATE.hud showAnimated:YES whileExecutingBlock:^{
 		NSString *userID = self.tfLogin.text;
 		NSString *password = self.tfPassword.text;
 
-		id retVal = [REDIS.redis command:[NSString stringWithFormat:@"HLEN %@", userID]];
+		NSString *userIDKey = [REDIS.redis command:[NSString stringWithFormat:@"GET user:%@", userID]];
 
-		if ([retVal integerValue] <= 0) {
+		if (!userIDKey) {
 			NSLog(@"Not a valid user.");
 		}
 		else {
-			retVal = [REDIS.redis command:[NSString stringWithFormat:@"HGET %@ pass", userID]];
+			NSString *retVal = [REDIS.redis command:[NSString stringWithFormat:@"HGET user:%@ password", userIDKey]];
 
 			if ([retVal isEqualToString:password]) {
 				isSuccessful = YES;
@@ -65,6 +63,7 @@
 		}
 	} completionBlock:^{
 		if (isSuccessful) {
+			NSLog(@"This is fine go ahead.");
 		}
 	}];
 }

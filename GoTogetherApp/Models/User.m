@@ -17,5 +17,6 @@
 @dynamic photo;
 @dynamic userBaseKey;
 @dynamic userID;
+@dynamic password;
 
 @end

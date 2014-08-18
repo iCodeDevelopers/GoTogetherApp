@@ -29,6 +29,8 @@
 		D69923A419939A38006A7DCC /* GTDriveMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A019939A38006A7DCC /* GTDriveMenuViewController.m */; };
 		D69923A519939A38006A7DCC /* GTMyMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A219939A38006A7DCC /* GTMyMenuViewController.m */; };
 		D69923A919939A62006A7DCC /* GTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A819939A62006A7DCC /* GTRootViewController.m */; };
+		D6CFEB9219A1E9A0001F74C2 /* NSManagedObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CFEB9119A1E9A0001F74C2 /* NSManagedObject+JSON.m */; };
+		D6CFEB9419A1FC1E001F74C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CFEB9319A1FC1E001F74C2 /* CoreData.framework */; };
 		D6D00FAF1988FDBB00FBBDF1 /* GTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D00FAE1988FDBB00FBBDF1 /* GTRegisterViewController.m */; };
 		D6D00FB5198906E200FBBDF1 /* GTRedisObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D00FB4198906E200FBBDF1 /* GTRedisObject.m */; };
 		D6E496A819866B5E00480AEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496A719866B5E00480AEE /* Foundation.framework */; };
@@ -104,6 +106,9 @@
 		D69923A219939A38006A7DCC /* GTMyMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMyMenuViewController.m; sourceTree = "<group>"; };
 		D69923A719939A61006A7DCC /* GTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRootViewController.h; sourceTree = "<group>"; };
 		D69923A819939A62006A7DCC /* GTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRootViewController.m; sourceTree = "<group>"; };
+		D6CFEB9019A1E9A0001F74C2 /* NSManagedObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+JSON.h"; sourceTree = "<group>"; };
+		D6CFEB9119A1E9A0001F74C2 /* NSManagedObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+JSON.m"; sourceTree = "<group>"; };
+		D6CFEB9319A1FC1E001F74C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D6D00FAD1988FDBB00FBBDF1 /* GTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRegisterViewController.h; sourceTree = "<group>"; };
 		D6D00FAE1988FDBB00FBBDF1 /* GTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRegisterViewController.m; sourceTree = "<group>"; };
 		D6D00FB3198906E200FBBDF1 /* GTRedisObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRedisObject.h; sourceTree = "<group>"; };
@@ -137,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CFEB9419A1FC1E001F74C2 /* CoreData.framework in Frameworks */,
 				D6E496AA19866B5E00480AEE /* CoreGraphics.framework in Frameworks */,
 				D6E496AC19866B5E00480AEE /* UIKit.framework in Frameworks */,
 				D6E496A819866B5E00480AEE /* Foundation.framework in Frameworks */,
@@ -164,6 +170,8 @@
 				D6854CB5199B99C9001FB65F /* User.m */,
 				D6854CB7199B99FF001FB65F /* UserWorker.h */,
 				D6854CB8199B99FF001FB65F /* UserWorker.m */,
+				D6CFEB9019A1E9A0001F74C2 /* NSManagedObject+JSON.h */,
+				D6CFEB9119A1E9A0001F74C2 /* NSManagedObject+JSON.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 		D6E496A619866B5E00480AEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6CFEB9319A1FC1E001F74C2 /* CoreData.framework */,
 				D6E496A719866B5E00480AEE /* Foundation.framework */,
 				D6E496A919866B5E00480AEE /* CoreGraphics.framework */,
 				D6E496AB19866B5E00480AEE /* UIKit.framework */,
@@ -475,6 +484,7 @@
 				D6E496C119866B5E00480AEE /* GTLoginViewController.m in Sources */,
 				D686DA881994AAC300622C1D /* BAMSettings.m in Sources */,
 				D6E496B819866B5E00480AEE /* GTAppDelegate.m in Sources */,
+				D6CFEB9219A1E9A0001F74C2 /* NSManagedObject+JSON.m in Sources */,
 				D6854CB3199B9144001FB65F /* FDTakeController.m in Sources */,
 				D6E496ED1986751800480AEE /* MBProgressHUD.m in Sources */,
 				D6D00FB5198906E200FBBDF1 /* GTRedisObject.m in Sources */,

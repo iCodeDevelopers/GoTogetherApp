@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
 
 @interface GTAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (nonatomic, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic, readonly) MBProgressHUD *hud;
 
 @property (strong, nonatomic) UIWindow *window;
 

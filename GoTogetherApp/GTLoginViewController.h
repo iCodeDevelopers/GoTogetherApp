@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GTLoginViewController : UIViewController
+@interface GTLoginViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *tfLogin;
 @property (weak, nonatomic) IBOutlet UITextField *tfPassword;
 - (IBAction)doSignin:(id)sender;
