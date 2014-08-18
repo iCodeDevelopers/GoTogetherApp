@@ -67,4 +67,17 @@
 		}
 	}];
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	if ([textField isEqual:self.tfLogin]) {
+		[self.tfPassword becomeFirstResponder];
+	}
+	else if ([textField isEqual:self.tfPassword]) {
+		[textField resignFirstResponder];
+	}
+
+	return NO;
+}
+
 @end

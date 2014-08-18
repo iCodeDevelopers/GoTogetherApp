@@ -88,4 +88,25 @@
     [self.photoView setImage:photo];
 }
 
+#pragma mark - textfield delegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	if ([textField isEqual:self.tfUserID]) {
+		[self.tfPassword becomeFirstResponder];
+	}
+	else if ([textField isEqual:self.tfPassword]) {
+		[self.tfConfirmPassword becomeFirstResponder];
+	}
+	else if ([textField isEqual:self.tfConfirmPassword]) {
+		[self.tfFirstName becomeFirstResponder];
+	}
+	else if ([textField isEqual:self.tfFirstName]) {
+		[self.tfLastName becomeFirstResponder];
+	}
+	else if ([textField isEqual:self.tfLastName]) {
+		[textField resignFirstResponder];
+	}
+
+	return NO;
+}
 @end
