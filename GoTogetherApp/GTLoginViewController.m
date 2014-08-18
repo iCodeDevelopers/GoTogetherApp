@@ -56,6 +56,7 @@
 
 			if ([retVal isEqualToString:password]) {
 				isSuccessful = YES;
+				[APP_DELEGATE.gloabalDicti setObject:userIDKey forKey:@"userIDKey"];
 			}
 			else {
 				NSLog(@"Not a valid user and password.");
@@ -64,6 +65,9 @@
 	} completionBlock:^{
 		if (isSuccessful) {
 			NSLog(@"This is fine go ahead.");
+			[self.navigationController dismissViewControllerAnimated:YES completion:^{
+
+			}];
 		}
 	}];
 }

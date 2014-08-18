@@ -26,13 +26,15 @@
 {
 	[APP_DELEGATE.hud setLabelText:@"Connecting..."];
 
+	__block BOOL isLoginRequired = NO;
+
 	[APP_DELEGATE.hud showAnimated:YES whileExecutingBlock:^{
 		[REDIS connect];
-	} completionBlock:^{
-		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-		NSString *userAlreadySigned = [defaults objectForKey:@"UserAlreadySigned"];
 
-		if (!userAlreadySigned) {
+		NSString *key = [APP_DELEGATE.gloabalDicti objectForKey:@"userIDKey"];
+		isLoginRequired = key == nil;
+	} completionBlock:^{
+		if (isLoginRequired) {
 			dispatch_async(dispatch_get_main_queue(), ^(void){
 				[self performSegueWithIdentifier:@"showLogin" sender:self];
 			});

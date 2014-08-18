@@ -23,6 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	self.gloabalDicti = [NSMutableDictionary new];
     return YES;
 }
 							
