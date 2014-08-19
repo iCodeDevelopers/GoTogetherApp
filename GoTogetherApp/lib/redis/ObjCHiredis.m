@@ -123,8 +123,13 @@
 	redisReply *reply = redisCommand(context,[command UTF8String]);
 	id retVal = [self parseReply:reply];
     freeReplyObject(reply);
-	
-	return [retVal stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\""]];
+
+	if ([retVal isKindOfClass:[NSString class]]) {
+		return [retVal stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\""]];
+	}
+	else {
+		return retVal;
+	}
 }
 
 - (id)commandArgv:(NSArray *)cargv

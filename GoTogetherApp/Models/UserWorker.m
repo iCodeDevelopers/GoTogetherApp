@@ -20,37 +20,38 @@
 		return NO;
 	}
 
-	User *user = [User createModelContext];
-
-	[user setUserID:[inputs objectAtIndex:0]];
-	[user setPassword:[inputs objectAtIndex:1]];
-	[user setFirstName:[inputs objectAtIndex:2]];
-	[user setLastName:[inputs objectAtIndex:3]];
-	[user setGender:@"Male"];
+	NSString* userIDI = [inputs objectAtIndex:0];
+	NSString* passwordI = [inputs objectAtIndex:1];
+	NSString* firstNameI = [inputs objectAtIndex:2];
+	NSString* lastNameI = [inputs objectAtIndex:3];
+	NSString* genderI = @"Male";
 
 
-	NSString *userID = nil;
+	NSString *userIDE = nil;
 	// if user is not present
-	BOOL isOK = [REDIS executeCommand:[NSString stringWithFormat:@"GET user:%@", user.userID] result:&userID];
+	BOOL isOK = [REDIS executeCommand:[NSString stringWithFormat:@"GET user:%@", userIDI] result:&userIDE];
 
-	if (!userID) {
+	if (!userIDE) {
 		NSString *nextUserID = nil;
 		// Get the user token
 		isOK = [REDIS executeCommand:@"INCR global:nextuserid" result:&nextUserID];
 		if (isOK && nextUserID) {
 			NSString *result = nil;
 			// set the userID and key map for the login
-			isOK = [REDIS executeCommand:[NSString stringWithFormat:@"SET user:%@ \"%@\"", user.userID, nextUserID]  result:&result];
+			isOK = [REDIS executeCommand:[NSString stringWithFormat:@"SET user:%@ \"%@\"", userIDI, nextUserID]  result:&result];
 
 			if (isOK) {
 				// set the user profile.
-				NSString *command = [NSString stringWithFormat:@"HMSET user:%@ userid \"%@\"  password \"%@\"  firstname \"%@\" lastname \"%@\" gender \"%@\"",
-									 nextUserID,
-									 user.userID,
-									 user.password,
-									 user.firstName,
-									 user.lastName,
-									 user.gender];
+				NSString *command =
+				[NSString stringWithFormat:
+				 @"HMSET user:%@ userid \"%@\"  password \"%@\"  firstname \"%@\" lastname \"%@\" gender \"%@\"",
+				 nextUserID,
+				 userIDI,
+				 passwordI,
+				 firstNameI,
+				 lastNameI,
+				 genderI];
+
 				isOK = [REDIS executeCommand:command result:&result];
 			}
 		}

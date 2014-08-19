@@ -8,6 +8,7 @@
 
 #import "GTLoginViewController.h"
 #import "GTAppDelegate.h"
+#import "UserWorker.h"
 #import "GTRedisObject.h"
 
 @interface GTLoginViewController ()

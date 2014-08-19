@@ -9,6 +9,7 @@
 #import "GTDashboardViewController.h"
 #import "GTAppDelegate.h"
 #import "GTRedisObject.h"
+#import "UserWorker.h"
 
 @interface GTDashboardViewController ()
 
@@ -31,8 +32,15 @@
 	[APP_DELEGATE.hud showAnimated:YES whileExecutingBlock:^{
 		[REDIS connect];
 
-		NSString *key = [APP_DELEGATE.gloabalDicti objectForKey:@"userIDKey"];
-		isLoginRequired = key == nil;
+		NSString *userIDkey = [APP_DELEGATE.gloabalDicti objectForKey:@"userIDKey"];
+
+		isLoginRequired = userIDkey == nil;
+
+		if (!isLoginRequired) { // If user is availaiable
+			User *user  = [User createModelContext];
+
+			
+		}
 	} completionBlock:^{
 		if (isLoginRequired) {
 			dispatch_async(dispatch_get_main_queue(), ^(void){
