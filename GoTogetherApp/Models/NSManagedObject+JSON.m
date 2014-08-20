@@ -33,7 +33,7 @@
 
             NSString *propertyName = [NSString stringWithCString:propName
 														encoding:[NSString defaultCStringEncoding]];
-            NSString *propertyType = [NSString stringWithCString:propType
+            __unused NSString *propertyType = [NSString stringWithCString:propType
 														encoding:[NSString defaultCStringEncoding]];
 
 			id propertyObject = [self performSelector:NSSelectorFromString(propertyName) withObject:nil];

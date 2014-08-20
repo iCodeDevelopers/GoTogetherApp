@@ -11,6 +11,10 @@
 
 @interface UserWorker : NSObject
 
-+ (BOOL)doRegisteration:(NSArray *)inputs;
++ (BOOL)doRegisteration:(NSDictionary *)inputs;
+
++ (BOOL)doCreateANewRide:(NSArray *)inputs;
+
++ (void)doLogin:(NSArray *)inputs;
 
 @end

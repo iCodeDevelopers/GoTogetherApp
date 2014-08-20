@@ -13,60 +13,52 @@
 
 @implementation UserWorker
 
-+ (BOOL)doRegisteration:(NSArray *)inputs
++ (BOOL)doRegisteration:(NSDictionary *)input
 {
-	if ([inputs count] < 5) {
+	if ([input count] < 5) {
 		NSLog(@"Less Inputs..");
 		return NO;
 	}
 
-	NSString* userIDI = [inputs objectAtIndex:0];
-	NSString* passwordI = [inputs objectAtIndex:1];
-	NSString* firstNameI = [inputs objectAtIndex:2];
-	NSString* lastNameI = [inputs objectAtIndex:3];
-	NSString* genderI = @"Male";
+	// if user is present
+	NSString *userIDKey = [REDIS executeCommand:[NSString stringWithFormat:@"GET user:%@", [input objectForKey:@"user"]]];
 
-
-	NSString *userIDE = nil;
-	// if user is not present
-	BOOL isOK = [REDIS executeCommand:[NSString stringWithFormat:@"GET user:%@", userIDI] result:&userIDE];
-
-	if (!userIDE) {
-		NSString *nextUserID = nil;
+	if (!userIDKey) {
 		// Get the user token
-		isOK = [REDIS executeCommand:@"INCR global:nextuserid" result:&nextUserID];
-		if (isOK && nextUserID) {
-			NSString *result = nil;
-			// set the userID and key map for the login
-			isOK = [REDIS executeCommand:[NSString stringWithFormat:@"SET user:%@ \"%@\"", userIDI, nextUserID]  result:&result];
+		userIDKey = [REDIS executeCommand:@"INCR global:nextuserid"];
 
-			if (isOK) {
+		if (userIDKey) {
+			// set the userID and key map for the login
+			id retVal = [REDIS executeCommand:[NSString stringWithFormat:@"SET user:%@ %@", [input objectForKey:@"user"], userIDKey]];
+
+			if (retVal) {
 				// set the user profile.
 				NSString *command =
 				[NSString stringWithFormat:
-				 @"HMSET user:%@ userid \"%@\"  password \"%@\"  firstname \"%@\" lastname \"%@\" gender \"%@\"",
-				 nextUserID,
-				 userIDI,
-				 passwordI,
-				 firstNameI,
-				 lastNameI,
-				 genderI];
+				 @"HMSET user:%@ userid %@  password %@  firstname %@ lastname %@ gender %@",
+				 userIDKey,
+				 [input objectForKey:@"user"],
+				 [input objectForKey:@"password"],
+				 [input objectForKey:@"firstname"],
+				 [input objectForKey:@"lastname"],
+				 [input objectForKey:@"gender"]];
 
-				isOK = [REDIS executeCommand:command result:&result];
+				retVal = [REDIS executeCommand:command];
+
+				return retVal != nil;
 			}
 		}
 		else {
 			NSLog(@"Does not have a valid token.");
-			isOK = NO;
+			return NO;
 		}
 	}
 	else {
 		NSLog(@"User already exist.");
-		isOK = NO;
+		return NO;
 	}
 
-
-	return isOK;
+	return NO;
 }
 
 + (void)doLogin:(NSArray *)inputs
@@ -76,6 +68,50 @@
 		return;
 	}
 
+}
+
++ (BOOL)doCreateANewRide:(NSDictionary *)input
+{
+	if ([input count] < 8) {
+		NSLog(@"Less Inputs..");
+		return NO;
+	}
+
+	NSString *userIDKey = [APP_DELEGATE.gloabalDicti objectForKey:@"useridkey"]; // set the userid key
+
+	// Get the new ride token
+	NSString *nextRideID = [REDIS executeCommand:@"INCR global:nextrideid"];
+
+	if (nextRideID) {
+		//			// set the userID and key map for the login
+
+		// set the the ride
+		NSString *command =
+		[NSString stringWithFormat:
+		 @"HMSET ride:%@ name %@  number %@  fromlat %@ fromlang %@ tolat %@ tolang %@ rideoption %@ ridewhen %@",
+		 nextRideID,
+		 [input objectForKey:@"name"],
+		 [input objectForKey:@"number"],
+		 [input objectForKey:@"fromlat"],
+		 [input objectForKey:@"fromlang"],
+		 [input objectForKey:@"tolat"],
+		 [input objectForKey:@"tolang"],
+		 [input objectForKey:@"rideoption"],
+		 [input objectForKey:@"ridewhen"]];
+
+		id retVal = [REDIS executeCommand:command];
+
+		if (retVal) {
+			retVal = [REDIS executeCommand:[NSString stringWithFormat:@"SADD rides:%@ %@", userIDKey, nextRideID]];
+			return retVal!=nil;
+		}
+	}
+	else {
+		NSLog(@"Could not get a new token.");
+		return NO;
+	}
+	
+	return NO;
 }
 
 @end

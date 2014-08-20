@@ -42,13 +42,14 @@
 		[self.redis close];
 		self.redis = nil;
 	}
-	
-	self.redis = [ObjCHiredis redis:@"pub-redis-10303.us-east-1-1.2.ec2.garantiadata.com"
-																				on:[NSNumber numberWithInteger:10303]];
 
-	retVal = [self.redis command:@"AUTH loveme1234"];
+	self.redis = [ObjCHiredis redis:@"10.249.21.32" on:@(6379)];
+//	self.redis = [ObjCHiredis redis:@"pub-redis-10303.us-east-1-1.2.ec2.garantiadata.com"
+//																				on:@(10303)];
 
-	if ([retVal isEqualToString:@"OK"]) {
+	//retVal = [self.redis command:@"AUTH loveme1234"];
+
+	if (self.redis || [retVal isEqualToString:@"OK"]) {
 		NSLog(@"Connected to redis server.");
 	}
 	else {
@@ -62,21 +63,20 @@
 	self.redis = nil;
 }
 
-- (BOOL)executeCommand:(NSString *)command result:(NSString *__autoreleasing *)result
+- (id)executeCommand:(NSString *)command
 {
-	BOOL successfull = YES;
-
+	NSLog(@"Command ==> %@", command);
 	id 	retVal = [self.redis command:command];
 
-	successfull = (retVal != nil);
-
-	if (successfull && result != NULL) {
-		*result = [NSString stringWithFormat:@"%@", retVal];
-	}
-	else {
-		*result = nil;
-	}
-
-	return successfull;
+	NSLog(@"Command ==> %@ - type(%@).", retVal, [retVal class]);
+	return retVal;
 }
+
+- (id)executeCommandList:(NSArray *)commandList
+{
+	id 	retVal = [self.redis commandArgv:commandList];
+
+	return retVal;
+}
+
 @end

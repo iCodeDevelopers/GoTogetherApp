@@ -32,14 +32,13 @@
 	[APP_DELEGATE.hud showAnimated:YES whileExecutingBlock:^{
 		[REDIS connect];
 
-		NSString *userIDkey = [APP_DELEGATE.gloabalDicti objectForKey:@"userIDKey"];
+		NSString *userIDkey = [APP_DELEGATE.gloabalDicti objectForKey:@"useridkey"];
 
 		isLoginRequired = userIDkey == nil;
 
 		if (!isLoginRequired) { // If user is availaiable
 			User *user  = [User createModelContext];
 
-			
 		}
 	} completionBlock:^{
 		if (isLoginRequired) {

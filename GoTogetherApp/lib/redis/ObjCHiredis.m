@@ -124,12 +124,8 @@
 	id retVal = [self parseReply:reply];
     freeReplyObject(reply);
 
-	if ([retVal isKindOfClass:[NSString class]]) {
-		return [retVal stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\""]];
-	}
-	else {
-		return retVal;
-	}
+
+	return retVal;
 }
 
 - (id)commandArgv:(NSArray *)cargv

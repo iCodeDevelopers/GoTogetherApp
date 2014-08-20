@@ -29,6 +29,12 @@
 		D69923A419939A38006A7DCC /* GTDriveMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A019939A38006A7DCC /* GTDriveMenuViewController.m */; };
 		D69923A519939A38006A7DCC /* GTMyMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A219939A38006A7DCC /* GTMyMenuViewController.m */; };
 		D69923A919939A62006A7DCC /* GTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A819939A62006A7DCC /* GTRootViewController.m */; };
+		D6A1197919A4765B00FEE8E1 /* GTCreateRideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1197819A4765B00FEE8E1 /* GTCreateRideViewController.m */; };
+		D6A1197C19A4804400FEE8E1 /* GTShowRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1197B19A4804400FEE8E1 /* GTShowRouteViewController.m */; };
+		D6A1197F19A4A06300FEE8E1 /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1197E19A4A06300FEE8E1 /* Ride.m */; };
+		D6A1198219A4A06400FEE8E1 /* SearchRide.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1198119A4A06400FEE8E1 /* SearchRide.m */; };
+		D6A1198519A4A06400FEE8E1 /* InterestedUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1198419A4A06400FEE8E1 /* InterestedUsers.m */; };
+		D6A1198719A4C5C900FEE8E1 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A1198619A4C5C900FEE8E1 /* GoogleMaps.framework */; };
 		D6CFEB9219A1E9A0001F74C2 /* NSManagedObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CFEB9119A1E9A0001F74C2 /* NSManagedObject+JSON.m */; };
 		D6CFEB9419A1FC1E001F74C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CFEB9319A1FC1E001F74C2 /* CoreData.framework */; };
 		D6D00FAF1988FDBB00FBBDF1 /* GTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D00FAE1988FDBB00FBBDF1 /* GTRegisterViewController.m */; };
@@ -106,6 +112,17 @@
 		D69923A219939A38006A7DCC /* GTMyMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMyMenuViewController.m; sourceTree = "<group>"; };
 		D69923A719939A61006A7DCC /* GTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRootViewController.h; sourceTree = "<group>"; };
 		D69923A819939A62006A7DCC /* GTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRootViewController.m; sourceTree = "<group>"; };
+		D6A1197719A4765B00FEE8E1 /* GTCreateRideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCreateRideViewController.h; sourceTree = "<group>"; };
+		D6A1197819A4765B00FEE8E1 /* GTCreateRideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCreateRideViewController.m; sourceTree = "<group>"; };
+		D6A1197A19A4804400FEE8E1 /* GTShowRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShowRouteViewController.h; sourceTree = "<group>"; };
+		D6A1197B19A4804400FEE8E1 /* GTShowRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShowRouteViewController.m; sourceTree = "<group>"; };
+		D6A1197D19A4A06300FEE8E1 /* Ride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ride.h; sourceTree = "<group>"; };
+		D6A1197E19A4A06300FEE8E1 /* Ride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ride.m; sourceTree = "<group>"; };
+		D6A1198019A4A06400FEE8E1 /* SearchRide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRide.h; sourceTree = "<group>"; };
+		D6A1198119A4A06400FEE8E1 /* SearchRide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRide.m; sourceTree = "<group>"; };
+		D6A1198319A4A06400FEE8E1 /* InterestedUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestedUsers.h; sourceTree = "<group>"; };
+		D6A1198419A4A06400FEE8E1 /* InterestedUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestedUsers.m; sourceTree = "<group>"; };
+		D6A1198619A4C5C900FEE8E1 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		D6CFEB9019A1E9A0001F74C2 /* NSManagedObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+JSON.h"; sourceTree = "<group>"; };
 		D6CFEB9119A1E9A0001F74C2 /* NSManagedObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+JSON.m"; sourceTree = "<group>"; };
 		D6CFEB9319A1FC1E001F74C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -146,6 +163,7 @@
 				D6CFEB9419A1FC1E001F74C2 /* CoreData.framework in Frameworks */,
 				D6E496AA19866B5E00480AEE /* CoreGraphics.framework in Frameworks */,
 				D6E496AC19866B5E00480AEE /* UIKit.framework in Frameworks */,
+				D6A1198719A4C5C900FEE8E1 /* GoogleMaps.framework in Frameworks */,
 				D6E496A819866B5E00480AEE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +185,12 @@
 			isa = PBXGroup;
 			children = (
 				D670DF98199A44EC000F0640 /* database.xcdatamodeld */,
+				D6A1198319A4A06400FEE8E1 /* InterestedUsers.h */,
+				D6A1198419A4A06400FEE8E1 /* InterestedUsers.m */,
+				D6A1198019A4A06400FEE8E1 /* SearchRide.h */,
+				D6A1198119A4A06400FEE8E1 /* SearchRide.m */,
+				D6A1197D19A4A06300FEE8E1 /* Ride.h */,
+				D6A1197E19A4A06300FEE8E1 /* Ride.m */,
 				D6854CB4199B99C9001FB65F /* User.h */,
 				D6854CB5199B99C9001FB65F /* User.m */,
 				D6854CB7199B99FF001FB65F /* UserWorker.h */,
@@ -248,8 +272,12 @@
 		D686DA991994E1C700622C1D /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				D6A1197719A4765B00FEE8E1 /* GTCreateRideViewController.h */,
+				D6A1197819A4765B00FEE8E1 /* GTCreateRideViewController.m */,
 				D686DA9A1994E1C700622C1D /* GTDashboardViewController.h */,
 				D686DA9B1994E1C700622C1D /* GTDashboardViewController.m */,
+				D6A1197A19A4804400FEE8E1 /* GTShowRouteViewController.h */,
+				D6A1197B19A4804400FEE8E1 /* GTShowRouteViewController.m */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -360,6 +388,7 @@
 		D6E496DF19866D3F00480AEE /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				D6A1198619A4C5C900FEE8E1 /* GoogleMaps.framework */,
 				D6854CB0199B9144001FB65F /* FDTake */,
 				D686DA921994CDC200622C1D /* PaperCells */,
 				D686DA851994AAC300622C1D /* Settings */,
@@ -480,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6854CB6199B99C9001FB65F /* User.m in Sources */,
+				D6A1198219A4A06400FEE8E1 /* SearchRide.m in Sources */,
 				D6D00FAF1988FDBB00FBBDF1 /* GTRegisterViewController.m in Sources */,
 				D6E496B419866B5E00480AEE /* main.m in Sources */,
 				D69923A919939A62006A7DCC /* GTRootViewController.m in Sources */,
@@ -488,6 +518,7 @@
 				D6E496B819866B5E00480AEE /* GTAppDelegate.m in Sources */,
 				D6CFEB9219A1E9A0001F74C2 /* NSManagedObject+JSON.m in Sources */,
 				D6854CB3199B9144001FB65F /* FDTakeController.m in Sources */,
+				D6A1197F19A4A06300FEE8E1 /* Ride.m in Sources */,
 				D6E496ED1986751800480AEE /* MBProgressHUD.m in Sources */,
 				D6D00FB5198906E200FBBDF1 /* GTRedisObject.m in Sources */,
 				D686DA8C1994AC1000622C1D /* GTSettingsViewController.m in Sources */,
@@ -499,11 +530,14 @@
 				D680B52B1993B6C40040B305 /* net.c in Sources */,
 				D699239D19939A12006A7DCC /* RESideMenu.m in Sources */,
 				D6854CB9199B99FF001FB65F /* UserWorker.m in Sources */,
+				D6A1198519A4A06400FEE8E1 /* InterestedUsers.m in Sources */,
 				D69923A419939A38006A7DCC /* GTDriveMenuViewController.m in Sources */,
 				D699239C19939A12006A7DCC /* RECommonFunctions.m in Sources */,
+				D6A1197C19A4804400FEE8E1 /* GTShowRouteViewController.m in Sources */,
 				D670DF9A199A44EC000F0640 /* database.xcdatamodeld in Sources */,
 				D680B52D1993B6C40040B305 /* ObjCHiredis.m in Sources */,
 				D686DA971994CDC200622C1D /* BFPaperTableViewCell.m in Sources */,
+				D6A1197919A4765B00FEE8E1 /* GTCreateRideViewController.m in Sources */,
 				D680B52C1993B6C40040B305 /* sds.c in Sources */,
 				D680B5291993B6C40040B305 /* dict.c in Sources */,
 				D680B5281993B6C40040B305 /* async.c in Sources */,
@@ -652,6 +686,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoTogetherApp/lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoTogetherApp/GoTogetherApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -674,6 +712,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoTogetherApp/lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoTogetherApp/GoTogetherApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = (

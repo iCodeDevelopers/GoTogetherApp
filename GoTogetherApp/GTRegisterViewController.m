@@ -46,20 +46,16 @@
 	[APP_DELEGATE.hud showAnimated:YES
 			   whileExecutingBlock:^{
 				   registrationDone = 
-				   [UserWorker doRegisteration:[NSArray arrayWithObjects:[self.tfUserID.text length]<=0?nil:self.tfUserID.text,
-												[self.tfPassword.text length]<=0?nil:self.tfPassword.text,
-												[self.tfConfirmPassword.text length]<=0?nil:self.tfConfirmPassword.text,
-												self.tfFirstName.text,
-												self.tfLastName.text,
-												[NSNumber numberWithBool:YES],
-												self.imagePath,
-												nil]];
+				   [UserWorker doRegisteration:@{@"user": self.tfUserID.text,
+												 @"password" : self.tfPassword.text,
+												 @"firstname" : self.tfFirstName.text,
+												 @"lastname" : self.tfLastName.text,
+												 @"gender" : @"male"}];
 			   } completionBlock:^{
 				   if (registrationDone) {
 					   [self performSegueWithIdentifier:@"login" sender:self];
 				   }
 			   }];
-
 }
 
 - (IBAction)doUploadClicked:(id)sender {

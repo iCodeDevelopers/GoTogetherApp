@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="InterestedUsers" representedClassName="InterestedUsers" syncable="YES">
+        <attribute name="iUserID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iUserStatus" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Ride" representedClassName="Ride" syncable="YES">
+        <attribute name="rideFromLang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideFromLat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideOption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideToLang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideToLat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideWhen" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="interestedUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InterestedUsers" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="rides" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="SearchRide" representedClassName="SearchRide" syncable="YES">
+        <attribute name="sRideFromLang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sRideFromLat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sRideID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sRideToLang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sRideToLat" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="interestedUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InterestedUsers" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="searchRides" inverseEntity="User" syncable="YES"/>
+    </entity>
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
@@ -8,8 +34,13 @@
         <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="userBaseKey" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rides" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ride" inverseName="user" inverseEntity="Ride" syncable="YES"/>
+        <relationship name="searchRides" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SearchRide" inverseName="user" inverseEntity="SearchRide" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-2358" positionY="-1395" width="128" height="150"/>
+        <element name="User" positionX="-2421" positionY="-1413" width="128" height="178"/>
+        <element name="Ride" positionX="-2052" positionY="-1557" width="128" height="208"/>
+        <element name="SearchRide" positionX="-2043" positionY="-1287" width="128" height="148"/>
+        <element name="InterestedUsers" positionX="-1757" positionY="-1314" width="128" height="73"/>
     </elements>
 </model>

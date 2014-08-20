@@ -43,8 +43,8 @@
 {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	switch (indexPath.row) {
-		case 0: //Dashboard
-			[self presentMenu:@"dashboard"];
+		case 0: //create ride 
+			[self presentMenu:@"createride"];
 			break;
 		case 1: //Profile
 			[self presentMenu:@"profile"];
@@ -67,9 +67,8 @@
 	if (!menu) {
 		return;
 	}
-	UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:menu];
-	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
-	[self.sideMenuViewController setContentViewController:navController animated:YES ];
+	UINavigationController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:menu];
+	[self.sideMenuViewController setContentViewController:viewController animated:YES ];
 }
 
 #pragma mark -

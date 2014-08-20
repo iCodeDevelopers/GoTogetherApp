@@ -57,7 +57,7 @@
 
 			if ([retVal isEqualToString:password]) {
 				isSuccessful = YES;
-				[APP_DELEGATE.gloabalDicti setObject:userIDKey forKey:@"userIDKey"];
+				[APP_DELEGATE.gloabalDicti setObject:userIDKey forKey:@"useridkey"];
 			}
 			else {
 				NSLog(@"Not a valid user and password.");
