@@ -46,14 +46,14 @@
 		case 0: //create ride 
 			[self presentMenu:@"createride"];
 			break;
-		case 1: //Profile
-			[self presentMenu:@"profile"];
+		case 1: //Find Ride
+			[self presentMenu:@"findride"];
 			break;
 
-		case 2: //Settings
-			[self presentMenu:@"settings"];
+		case 2: //inbox
+			[self presentMenu:@"inbox"];
 			break;
-		case 3: //Logout
+		case 3: //Cost
 			break;
 		default:
 			break;

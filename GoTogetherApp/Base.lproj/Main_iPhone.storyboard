@@ -606,10 +606,10 @@
             </objects>
             <point key="canvasLocation" x="1525" y="-674"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Profile Navigation-->
         <scene sceneID="FSp-Lt-b7L">
             <objects>
-                <navigationController storyboardIdentifier="profile" definesPresentationContext="YES" id="Sbs-73-Ndl" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="profile" title="Profile Navigation" definesPresentationContext="YES" id="Sbs-73-Ndl" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gvm-gy-qq9">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -620,6 +620,180 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGT-OJ-WfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1511" y="116"/>
+        </scene>
+        <!--Inbox Table View Controller - Inbox-->
+        <scene sceneID="ia2-Ck-VHi">
+            <objects>
+                <tableViewController id="kqf-4m-HSO" customClass="GTInboxTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="O3P-Mk-0zv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="kqf-4m-HSO" id="sdK-vH-9NW"/>
+                            <outlet property="delegate" destination="kqf-4m-HSO" id="d0n-j5-FAd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Inbox" id="2Dw-lS-z4J">
+                        <barButtonItem key="leftBarButtonItem" title="My Menu" id="Ka3-pH-Q6E">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="kqf-4m-HSO" id="9Nu-9K-gfb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="My Drive" id="Jj6-wH-aq2">
+                            <connections>
+                                <action selector="presentRightMenuViewController:" destination="kqf-4m-HSO" id="rNY-yu-jZq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAs-lL-zzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2063" y="804"/>
+        </scene>
+        <!--Navigation Controller - FindRide Navigation-->
+        <scene sceneID="njd-E2-1xJ">
+            <objects>
+                <navigationController storyboardIdentifier="findride" title="FindRide Navigation" definesPresentationContext="YES" id="yp6-6B-njO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TsL-zW-Z9Z">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="s9i-OS-t5k" kind="relationship" relationship="rootViewController" id="eD2-2V-2Qv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Gv-4S-zUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="1402"/>
+        </scene>
+        <!--Search Ride View Controller - Find Ride-->
+        <scene sceneID="CoI-4P-nfM">
+            <objects>
+                <viewController id="s9i-OS-t5k" customClass="GTSearchRideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gOJ-v9-eqF"/>
+                        <viewControllerLayoutGuide type="bottom" id="NYt-l4-pTC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zis-wJ-sly">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kp6-wD-o7v" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRS-Nu-3TS">
+                                        <rect key="frame" x="2" y="441" width="316" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.67450980390000004" green="0.78039215689999997" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Find Ride">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="TdA-kw-BNo" kind="push" id="d08-nN-K8A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Type Destination" translatesAutoresizingMaskIntoConstraints="NO" id="70B-pd-Kgt">
+                                <rect key="frame" x="0.0" y="67" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="s9i-OS-t5k" id="m8f-KQ-ggJ"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find Ride" id="nME-Km-cmR">
+                        <barButtonItem key="leftBarButtonItem" title="My Menu" id="maS-Nc-eLa">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="s9i-OS-t5k" id="0CX-pI-Flt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="My Drive" id="C5l-bR-BqN">
+                            <connections>
+                                <action selector="presentRightMenuViewController:" destination="s9i-OS-t5k" id="6lB-k1-ako"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="kp6-wD-o7v" id="tMz-h4-R7e"/>
+                        <outlet property="searchDisplayController" destination="eRi-OF-Xfx" id="Vzk-e3-ydg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOo-zQ-uOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="eRi-OF-Xfx">
+                    <connections>
+                        <outlet property="delegate" destination="s9i-OS-t5k" id="UA4-f8-x5Z"/>
+                        <outlet property="searchBar" destination="70B-pd-Kgt" id="9zT-bJ-6to"/>
+                        <outlet property="searchContentsController" destination="s9i-OS-t5k" id="Agp-DN-0jX"/>
+                        <outlet property="searchResultsDataSource" destination="s9i-OS-t5k" id="m6e-Qi-WRo"/>
+                        <outlet property="searchResultsDelegate" destination="s9i-OS-t5k" id="yj0-B6-gU9"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1929" y="1396"/>
+        </scene>
+        <!--Table View Controller - Ride Match-->
+        <scene sceneID="fcp-fu-8Ed">
+            <objects>
+                <tableViewController id="TdA-kw-BNo" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wpo-Qq-R6U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="TdA-kw-BNo" id="9CI-Ot-5oj"/>
+                            <outlet property="delegate" destination="TdA-kw-BNo" id="yzs-D6-aXv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Ride Match" id="2K3-VG-zYR"/>
+                    <connections>
+                        <segue destination="Xhn-ct-rYJ" kind="push" id="C7w-hb-fWN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Joy-LN-TJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="1396"/>
+        </scene>
+        <!--Table View Controller - A Ride-->
+        <scene sceneID="tJ2-co-kKh">
+            <objects>
+                <tableViewController id="Xhn-ct-rYJ" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hFu-IM-7oW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Xhn-ct-rYJ" id="04E-CT-a49"/>
+                            <outlet property="delegate" destination="Xhn-ct-rYJ" id="liz-Op-TIX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="A Ride" id="Kip-ZJ-lOv">
+                        <barButtonItem key="rightBarButtonItem" title="Confirm" id="BhZ-HB-PC8"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVC-tG-uaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2761" y="1396"/>
+        </scene>
+        <!--Navigation Controller - Inbox Navigation-->
+        <scene sceneID="iNQ-Up-eSf">
+            <objects>
+                <navigationController storyboardIdentifier="inbox" title="Inbox Navigation" definesPresentationContext="YES" id="6Rb-qW-dlF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="clE-KQ-Jp9">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kqf-4m-HSO" kind="relationship" relationship="rootViewController" id="0am-H4-xE4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpE-x3-3Bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="804"/>
         </scene>
         <!--Profile View Controller - Profile-->
         <scene sceneID="Mf3-qy-6uE">
@@ -634,7 +808,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6Qg-HQ-IZK">
+                    <navigationItem key="navigationItem" title="Profile" id="6Qg-HQ-IZK">
                         <barButtonItem key="leftBarButtonItem" title="My Menu" id="JyL-6V-Vhr">
                             <connections>
                                 <action selector="presentLeftMenuViewController:" destination="7xk-av-42W" id="ytr-If-1JY"/>
