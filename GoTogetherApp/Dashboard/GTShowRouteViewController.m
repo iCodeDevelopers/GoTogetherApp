@@ -8,10 +8,13 @@
 
 #import "GTShowRouteViewController.h"
 #import "GTAppDelegate.h"
+#import <GoogleMaps/GoogleMaps.h>
+
 
 @interface GTShowRouteViewController ()
 
 @property (nonatomic, strong) NSMutableDictionary *rideInfo;
+@property (weak, nonatomic) IBOutlet GMSMapView *mapView;
 
 @end
 
@@ -25,7 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+	GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:0.0
+															longitude:0.0
+																 zoom:1];
+
+	// Create the GMSMapView with the camera position.
+	self.mapView.camera = camera;
 }
 
 - (void)viewDidAppear:(BOOL)animated

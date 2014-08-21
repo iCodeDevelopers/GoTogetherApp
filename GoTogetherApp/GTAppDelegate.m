@@ -8,6 +8,7 @@
 
 #import "GTAppDelegate.h"
 #import <CoreData/CoreData.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface GTAppDelegate ()
 
@@ -24,6 +25,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	self.gloabalDicti = [NSMutableDictionary new];
+
+	[GMSServices provideAPIKey:@"AIzaSyAjz4xzr9FpL3SXCQwsntqhEGYPOyFyGLU"];
+
     return YES;
 }
 							
