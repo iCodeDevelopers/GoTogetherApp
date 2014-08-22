@@ -17,4 +17,6 @@
 
 #define REDIS [GTRedisObject redisObject]
 #define APP_DELEGATE ((GTAppDelegate*) [[UIApplication sharedApplication] delegate])
-#define DASHBOARD_BG_COLOR [UIColor colorWithRed:193/255.f green:126/255.f blue:18/255.f alpha:1.f]
+#define DASHBOARD_BG_COLOR [UIColor colorWithRed:67/255.f green:106/255.f blue:67/255.f alpha:1.f]
+#define MENU_BG_COLOR [UIColor colorWithRed:27/255.f green:52/255.f blue:53/255.f alpha:1.f]
+#define MENU_TEXT_COLOR [UIColor colorWithRed:240/255.f green:208/255.f blue:112/255.f alpha:1.f]

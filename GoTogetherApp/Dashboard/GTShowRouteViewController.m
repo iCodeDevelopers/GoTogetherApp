@@ -9,12 +9,15 @@
 #import "GTShowRouteViewController.h"
 #import "GTAppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "UserWorker.h"
 
 
-@interface GTShowRouteViewController ()
+@interface GTShowRouteViewController () <UIAlertViewDelegate>
 
 @property (nonatomic, strong) NSMutableDictionary *rideInfo;
 @property (weak, nonatomic) IBOutlet GMSMapView *mapView;
+
+- (IBAction)doConfirmAndPost:(id)sender;
 
 @end
 
@@ -49,4 +52,31 @@
     [super didReceiveMemoryWarning];
 }
 
+- (IBAction)doConfirmAndPost:(id)sender
+{
+	[APP_DELEGATE.hud setLabelText:@"Creating New Ride..."];
+
+	__block BOOL creationDone = NO;
+
+	[APP_DELEGATE.hud showAnimated:YES
+			   whileExecutingBlock:^{
+				   creationDone =
+				   [UserWorker doCreateANewRide:self.rideInfo];
+			   } completionBlock:^{
+				   if (creationDone) {
+					   UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+																		   message:@"Your ride is created."
+																		  delegate:self
+																 cancelButtonTitle:@"OK"
+																 otherButtonTitles:nil];
+
+					   [alertView show];
+				   }
+			   }];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+	[self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

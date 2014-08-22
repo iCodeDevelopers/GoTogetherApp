@@ -39,14 +39,14 @@
 - (IBAction)doShowRoute:(id)sender
 {
 	[APP_DELEGATE.gloabalDicti setObject:@{@"name ": self.tfRideName.text,
-										   @"name ": self.tfRideName.text,
-										   @"number ": self.tfRideNumber.text,
-										   @"fromlat ": @"6.78787",
-										   @"fromlang ": @"6.78787",
-										   @"tolat ": @"6.78787",
-										   @"tolang ": @"6.78787",
-										   @"rideoption ": @"Single",
-										   @"ridewhen ": @"jsdghfjhdj",
+										   @"name": self.tfRideName.text,
+										   @"number": self.tfRideNumber.text,
+										   @"fromlat": @"12.9812780",
+										   @"fromlang": @"77.6807550",
+										   @"tolat": @"13.0409340",
+										   @"tolang": @"77.6183650",
+										   @"rideoption": @"Single",
+										   @"ridewhen": [NSDate date],
 										   }
 								  forKey:@"rideinfo"];
 	

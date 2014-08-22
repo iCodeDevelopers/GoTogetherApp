@@ -13,7 +13,7 @@
 
 + (BOOL)doRegisteration:(NSDictionary *)inputs;
 
-+ (BOOL)doCreateANewRide:(NSArray *)inputs;
++ (BOOL)doCreateANewRide:(NSDictionary *)inputs;
 
 + (void)doLogin:(NSArray *)inputs;
 
