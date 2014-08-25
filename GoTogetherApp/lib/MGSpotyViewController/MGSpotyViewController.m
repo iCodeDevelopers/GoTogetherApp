@@ -40,7 +40,7 @@ CGFloat const kMGOffsetBlurEffect = 2.0;
     [view setBackgroundColor:[UIColor grayColor]];
     
     //Configure the view
-	_image = [UIImage imageNamed:@"error"];
+	_image = [UIImage imageNamed:@"Profile"];
 	_mainImageView = [UIImageView new];
 	[_mainImageView setImage:_image];
     [_mainImageView setFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.width)];

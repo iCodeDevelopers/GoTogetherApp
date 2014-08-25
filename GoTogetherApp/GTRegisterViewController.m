@@ -29,6 +29,13 @@
     [super viewDidLoad];
 	self.takeController = [[FDTakeController alloc] init];
     self.takeController.delegate = self;
+    
+    NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIColor whiteColor],UITextAttributeTextColor,
+                                               [UIColor blackColor], UITextAttributeTextShadowColor,
+                                               [NSValue valueWithUIOffset:UIOffsetMake(-1, 0)], UITextAttributeTextShadowOffset, nil];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,12 +52,14 @@
 
 	[APP_DELEGATE.hud showAnimated:YES
 			   whileExecutingBlock:^{
+					 NSString *deviceToken = [APP_DELEGATE.gloabalDicti objectForKey:@"devicetoken"];
 				   registrationDone = 
 				   [UserWorker doRegisteration:@{@"user": self.tfUserID.text,
 												 @"password" : self.tfPassword.text,
 												 @"firstname" : self.tfFirstName.text,
 												 @"lastname" : self.tfLastName.text,
-												 @"gender" : @"male"}];
+												 @"gender" : @"male",
+												 @"devicetoken": deviceToken?deviceToken:@""}];
 			   } completionBlock:^{
 				   if (registrationDone) {
 					   [self performSegueWithIdentifier:@"login" sender:self];

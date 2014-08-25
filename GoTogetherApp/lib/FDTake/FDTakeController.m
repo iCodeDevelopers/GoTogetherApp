@@ -15,9 +15,9 @@
 
 static NSString * const kTakePhotoKey = @"takePhoto";
 static NSString * const kTakeVideoKey = @"takeVideo";
-static NSString * const kChooseFromLibraryKey = @"chooseFromLibrary";
+static NSString * const kChooseFromLibraryKey = @"From Gallery";
 static NSString * const kChooseFromPhotoRollKey = @"chooseFromPhotoRoll";
-static NSString * const kCancelKey = @"cancel";
+static NSString * const kCancelKey = @"Cancel";
 static NSString * const kNoSourcesKey = @"noSources";
 static NSString * const kStringsTableName = @"FDTake";
 

@@ -27,10 +27,32 @@
 	self.gloabalDicti = [NSMutableDictionary new];
 
 	[GMSServices provideAPIKey:@"AIzaSyAjz4xzr9FpL3SXCQwsntqhEGYPOyFyGLU"];
+	
+	[[UIApplication sharedApplication]
+	 registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |  UIRemoteNotificationTypeSound |                                         UIRemoteNotificationTypeAlert)];
 
     return YES;
 }
-							
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+	//application.applicationIconBadgeNumber++;
+	
+	NSLog(@"Did Receive Notification Called");
+	
+}
+
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+	NSString *strdeviceToken = [[[[deviceToken description]
+																stringByReplacingOccurrencesOfString: @"<" withString: @""]
+															 stringByReplacingOccurrencesOfString: @">" withString: @""]
+															stringByReplacingOccurrencesOfString: @" " withString:@""];
+	
+	[self.gloabalDicti setObject:strdeviceToken forKey:@"devicetoken"];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
 	[self saveContext];

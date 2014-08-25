@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTMapViewController.h"
+#import "GTDatePickerViewController.h"
 
-@interface GTCreateRideViewController : UITableViewController
+@interface GTCreateRideViewController : UITableViewController<LocationDelegate,DateDelegate>
 
 @end

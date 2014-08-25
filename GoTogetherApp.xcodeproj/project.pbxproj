@@ -7,6 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2816642919ABB87F00BEB808 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816638819ABB87F00BEB808 /* Main_iPad.storyboard */; };
+		2816642A19ABB87F00BEB808 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816638A19ABB87F00BEB808 /* Main_iPhone.storyboard */; };
+		2816642B19ABB87F00BEB808 /* GTCreateRideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816638F19ABB87F00BEB808 /* GTCreateRideViewController.m */; };
+		2816642C19ABB87F00BEB808 /* GTDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816639119ABB87F00BEB808 /* GTDashboardViewController.m */; };
+		2816642D19ABB87F00BEB808 /* GTDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816639319ABB87F00BEB808 /* GTDatePickerViewController.m */; };
+		2816642E19ABB87F00BEB808 /* GTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816639519ABB87F00BEB808 /* GTMapViewController.m */; };
+		2816642F19ABB87F00BEB808 /* GTRideMatchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816639719ABB87F00BEB808 /* GTRideMatchTableViewController.m */; };
+		2816643019ABB87F00BEB808 /* GTSearchFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816639919ABB87F00BEB808 /* GTSearchFriendsViewController.m */; };
+		2816643119ABB87F00BEB808 /* GTSearchRideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816639B19ABB87F00BEB808 /* GTSearchRideViewController.m */; };
+		2816643219ABB87F00BEB808 /* GTShowRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816639D19ABB87F00BEB808 /* GTShowRouteViewController.m */; };
+		2816643319ABB87F00BEB808 /* GTVerifyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816639F19ABB87F00BEB808 /* GTVerifyCarViewController.m */; };
+		2816643419ABB87F00BEB808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 281663A019ABB87F00BEB808 /* InfoPlist.strings */; };
+		2816643519ABB87F00BEB808 /* GoTogetherApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 281663A219ABB87F00BEB808 /* GoTogetherApp-Info.plist */; };
+		2816643619ABB87F00BEB808 /* GTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663A519ABB87F00BEB808 /* GTAppDelegate.m */; };
+		2816643719ABB87F00BEB808 /* GTDriveMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663A719ABB87F00BEB808 /* GTDriveMenuViewController.m */; };
+		2816643819ABB87F00BEB808 /* GTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663A919ABB87F00BEB808 /* GTLoginViewController.m */; };
+		2816643919ABB87F00BEB808 /* GTMyMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663AB19ABB87F00BEB808 /* GTMyMenuViewController.m */; };
+		2816643A19ABB87F00BEB808 /* GTRedisObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663AD19ABB87F00BEB808 /* GTRedisObject.m */; };
+		2816643B19ABB87F00BEB808 /* GTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663AF19ABB87F00BEB808 /* GTRegisterViewController.m */; };
+		2816643C19ABB87F00BEB808 /* GTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663B119ABB87F00BEB808 /* GTRootViewController.m */; };
+		2816643D19ABB87F00BEB808 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281663B219ABB87F00BEB808 /* Images.xcassets */; };
+		2816643E19ABB87F00BEB808 /* FDTakeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663B619ABB87F00BEB808 /* FDTakeController.m */; };
+		2816643F19ABB87F00BEB808 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281663B819ABB87F00BEB808 /* GoogleMaps.framework */; };
+		2816644019ABB87F00BEB808 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663BB19ABB87F00BEB808 /* MBProgressHUD.m */; };
+		2816644119ABB87F00BEB808 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663BF19ABB87F00BEB808 /* UIImage+ImageEffects.m */; };
+		2816644219ABB87F00BEB808 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663C119ABB87F00BEB808 /* UIImageView+LBBlurredImage.m */; };
+		2816644319ABB87F00BEB808 /* MGSpotyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663C319ABB87F00BEB808 /* MGSpotyViewController.m */; };
+		2816644419ABB87F00BEB808 /* BFPaperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663C619ABB87F00BEB808 /* BFPaperTableViewCell.m */; };
+		2816644519ABB87F00BEB808 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663C819ABB87F00BEB808 /* UIColor+BFPaperColors.m */; };
+		2816644619ABB87F00BEB808 /* async.c in Sources */ = {isa = PBXBuildFile; fileRef = 281663CB19ABB87F00BEB808 /* async.c */; };
+		2816644719ABB87F00BEB808 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 281663CD19ABB87F00BEB808 /* dict.c */; };
+		2816644819ABB87F00BEB808 /* hiredis.c in Sources */ = {isa = PBXBuildFile; fileRef = 281663D019ABB87F00BEB808 /* hiredis.c */; };
+		2816644919ABB87F00BEB808 /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = 281663D219ABB87F00BEB808 /* net.c */; };
+		2816644A19ABB87F00BEB808 /* sds.c in Sources */ = {isa = PBXBuildFile; fileRef = 281663D419ABB87F00BEB808 /* sds.c */; };
+		2816644B19ABB87F00BEB808 /* ObjCHiredis.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663D819ABB87F00BEB808 /* ObjCHiredis.m */; };
+		2816644C19ABB87F00BEB808 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663DB19ABB87F00BEB808 /* RECommonFunctions.m */; };
+		2816644D19ABB87F00BEB808 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663DD19ABB87F00BEB808 /* RESideMenu.m */; };
+		2816644E19ABB87F00BEB808 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663DF19ABB87F00BEB808 /* UIViewController+RESideMenu.m */; };
+		2816644F19ABB87F00BEB808 /* BAMSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663E219ABB87F00BEB808 /* BAMSettings.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2816645019ABB87F00BEB808 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663E519ABB87F00BEB808 /* ChatController.m */; };
+		2816645119ABB87F00BEB808 /* ChatInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663E719ABB87F00BEB808 /* ChatInput.m */; };
+		2816645219ABB87F00BEB808 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663E919ABB87F00BEB808 /* MessageCell.m */; };
+		2816645319ABB87F00BEB808 /* TopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663EC19ABB87F00BEB808 /* TopBar.m */; };
+		2816645419ABB87F00BEB808 /* TextFieldValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663EF19ABB87F00BEB808 /* TextFieldValidator.m */; };
+		2816645519ABB87F00BEB808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663F019ABB87F00BEB808 /* main.m */; };
+		2816645619ABB87F00BEB808 /* GTInboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663F319ABB87F00BEB808 /* GTInboxTableViewController.m */; };
+		2816645719ABB87F00BEB808 /* GTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663F519ABB87F00BEB808 /* GTMessageViewController.m */; };
+		2816645819ABB87F00BEB808 /* database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 281663F719ABB87F00BEB808 /* database.xcdatamodeld */; };
+		2816645919ABB87F00BEB808 /* GTSearchRideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663FA19ABB87F00BEB808 /* GTSearchRideTableViewCell.m */; };
+		2816645A19ABB87F00BEB808 /* InterestedUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663FC19ABB87F00BEB808 /* InterestedUsers.m */; };
+		2816645B19ABB87F00BEB808 /* NSManagedObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 281663FE19ABB87F00BEB808 /* NSManagedObject+JSON.m */; };
+		2816645C19ABB87F00BEB808 /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816640019ABB87F00BEB808 /* Ride.m */; };
+		2816645D19ABB87F00BEB808 /* SearchRide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816640219ABB87F00BEB808 /* SearchRide.m */; };
+		2816645E19ABB87F00BEB808 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816640419ABB87F00BEB808 /* User.m */; };
+		2816645F19ABB87F00BEB808 /* UserWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816640619ABB87F00BEB808 /* UserWorker.m */; };
+		2816646019ABB87F00BEB808 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816640819ABB87F00BEB808 /* Place.m */; };
+		2816646119ABB87F00BEB808 /* PlaceMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816640A19ABB87F00BEB808 /* PlaceMark.m */; };
+		2816646219ABB87F00BEB808 /* GTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816640D19ABB87F00BEB808 /* GTProfileViewController.m */; };
+		2816646319ABB87F00BEB808 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816640F19ABB87F00BEB808 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2816646419ABB87F00BEB808 /* add@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641119ABB87F00BEB808 /* add@2x~iphone.png */; };
+		2816646519ABB87F00BEB808 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641219ABB87F00BEB808 /* check.png */; };
+		2816646619ABB87F00BEB808 /* cost@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641319ABB87F00BEB808 /* cost@2x~iphone.png */; };
+		2816646719ABB87F00BEB808 /* dashboard@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641419ABB87F00BEB808 /* dashboard@2x~iphone.png */; };
+		2816646819ABB87F00BEB808 /* detail@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641519ABB87F00BEB808 /* detail@2x~iphone.png */; };
+		2816646919ABB87F00BEB808 /* find@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641619ABB87F00BEB808 /* find@2x~iphone.png */; };
+		2816646A19ABB87F00BEB808 /* icon_map.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2816641719ABB87F00BEB808 /* icon_map.PNG */; };
+		2816646B19ABB87F00BEB808 /* locality.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2816641819ABB87F00BEB808 /* locality.plist */; };
+		2816646C19ABB87F00BEB808 /* logout@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641919ABB87F00BEB808 /* logout@2x~iphone.png */; };
+		2816646D19ABB87F00BEB808 /* make@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641A19ABB87F00BEB808 /* make@2x~iphone.png */; };
+		2816646E19ABB87F00BEB808 /* menu@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641B19ABB87F00BEB808 /* menu@2x~ipad.png */; };
+		2816646F19ABB87F00BEB808 /* menu@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641C19ABB87F00BEB808 /* menu@2x~iphone.png */; };
+		2816647019ABB87F00BEB808 /* message@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641D19ABB87F00BEB808 /* message@2x~iphone.png */; };
+		2816647119ABB87F00BEB808 /* Person.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641E19ABB87F00BEB808 /* Person.png */; };
+		2816647219ABB87F00BEB808 /* profile@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816641F19ABB87F00BEB808 /* profile@2x~iphone.png */; };
+		2816647319ABB87F00BEB808 /* ride@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816642019ABB87F00BEB808 /* ride@2x~ipad.png */; };
+		2816647419ABB87F00BEB808 /* ride@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816642119ABB87F00BEB808 /* ride@2x~iphone.png */; };
+		2816647519ABB87F00BEB808 /* Search.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2816642219ABB87F00BEB808 /* Search.plist */; };
+		2816647619ABB87F00BEB808 /* settings@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816642319ABB87F00BEB808 /* settings@2x~iphone.png */; };
+		2816647719ABB87F00BEB808 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816642419ABB87F00BEB808 /* uncheck.png */; };
+		2816647819ABB87F00BEB808 /* GTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816642719ABB87F00BEB808 /* GTSettingsViewController.m */; };
+		2816647919ABB87F00BEB808 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2816642819ABB87F00BEB808 /* Settings.bundle */; };
 		D651D4D919A5C8CE00889B11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D651D4D819A5C8CE00889B11 /* AVFoundation.framework */; };
 		D651D4DB19A5C8E600889B11 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D651D4DA19A5C8E600889B11 /* CoreLocation.framework */; };
 		D651D4DD19A5C8F100889B11 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D651D4DC19A5C8F100889B11 /* CoreText.framework */; };
@@ -20,68 +101,15 @@
 		D651D4ED19A5C95700889B11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D651D4EC19A5C95700889B11 /* SystemConfiguration.framework */; };
 		D651D4EF19A5CA2B00889B11 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D651D4EE19A5CA2B00889B11 /* GoogleMaps.framework */; };
 		D651D4F119A5CD0B00889B11 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D651D4F019A5CD0B00889B11 /* GoogleMaps.bundle */; };
-		D670DF9A199A44EC000F0640 /* database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D670DF98199A44EC000F0640 /* database.xcdatamodeld */; };
-		D680B5281993B6C40040B305 /* async.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51A1993B6C40040B305 /* async.c */; };
-		D680B5291993B6C40040B305 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51C1993B6C40040B305 /* dict.c */; };
-		D680B52A1993B6C40040B305 /* hiredis.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B51F1993B6C40040B305 /* hiredis.c */; };
-		D680B52B1993B6C40040B305 /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B5211993B6C40040B305 /* net.c */; };
-		D680B52C1993B6C40040B305 /* sds.c in Sources */ = {isa = PBXBuildFile; fileRef = D680B5231993B6C40040B305 /* sds.c */; };
-		D680B52D1993B6C40040B305 /* ObjCHiredis.m in Sources */ = {isa = PBXBuildFile; fileRef = D680B5271993B6C40040B305 /* ObjCHiredis.m */; };
-		D6854CB3199B9144001FB65F /* FDTakeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6854CB2199B9144001FB65F /* FDTakeController.m */; };
-		D6854CB6199B99C9001FB65F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D6854CB5199B99C9001FB65F /* User.m */; };
-		D6854CB9199B99FF001FB65F /* UserWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6854CB8199B99FF001FB65F /* UserWorker.m */; };
-		D686DA881994AAC300622C1D /* BAMSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D686DA871994AAC300622C1D /* BAMSettings.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D686DA8C1994AC1000622C1D /* GTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D686DA8B1994AC1000622C1D /* GTSettingsViewController.m */; };
-		D686DA8E1994B78700622C1D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D686DA8D1994B78700622C1D /* Settings.bundle */; };
-		D686DA971994CDC200622C1D /* BFPaperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D686DA941994CDC200622C1D /* BFPaperTableViewCell.m */; };
-		D686DA981994CDC200622C1D /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D686DA961994CDC200622C1D /* UIColor+BFPaperColors.m */; };
-		D686DA9C1994E1C700622C1D /* GTDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D686DA9B1994E1C700622C1D /* GTDashboardViewController.m */; };
-		D699239C19939A12006A7DCC /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D699239719939A12006A7DCC /* RECommonFunctions.m */; };
-		D699239D19939A12006A7DCC /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D699239919939A12006A7DCC /* RESideMenu.m */; };
-		D699239E19939A12006A7DCC /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D699239B19939A12006A7DCC /* UIViewController+RESideMenu.m */; };
-		D69923A419939A38006A7DCC /* GTDriveMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A019939A38006A7DCC /* GTDriveMenuViewController.m */; };
-		D69923A519939A38006A7DCC /* GTMyMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A219939A38006A7DCC /* GTMyMenuViewController.m */; };
-		D69923A919939A62006A7DCC /* GTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69923A819939A62006A7DCC /* GTRootViewController.m */; };
-		D6A1197919A4765B00FEE8E1 /* GTCreateRideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1197819A4765B00FEE8E1 /* GTCreateRideViewController.m */; };
-		D6A1197C19A4804400FEE8E1 /* GTShowRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1197B19A4804400FEE8E1 /* GTShowRouteViewController.m */; };
-		D6A1197F19A4A06300FEE8E1 /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1197E19A4A06300FEE8E1 /* Ride.m */; };
-		D6A1198219A4A06400FEE8E1 /* SearchRide.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1198119A4A06400FEE8E1 /* SearchRide.m */; };
-		D6A1198519A4A06400FEE8E1 /* InterestedUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1198419A4A06400FEE8E1 /* InterestedUsers.m */; };
-		D6C3895119A5D742006965F0 /* TextFieldValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3895019A5D742006965F0 /* TextFieldValidator.m */; };
-		D6C3895A19A5D7E2006965F0 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3895519A5D7E2006965F0 /* UIImage+ImageEffects.m */; };
-		D6C3895B19A5D7E2006965F0 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3895719A5D7E2006965F0 /* UIImageView+LBBlurredImage.m */; };
-		D6C3895C19A5D7E2006965F0 /* MGSpotyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3895919A5D7E2006965F0 /* MGSpotyViewController.m */; };
-		D6C3896019A5D8A7006965F0 /* GTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3895F19A5D8A7006965F0 /* GTProfileViewController.m */; };
-		D6C3896319A5DDBB006965F0 /* error@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C3896119A5DDBB006965F0 /* error@2x~ipad.png */; };
-		D6C3896419A5DDBB006965F0 /* error@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C3896219A5DDBB006965F0 /* error@2x~iphone.png */; };
-		D6C3897019A5EF09006965F0 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3896719A5EF09006965F0 /* ChatController.m */; };
-		D6C3897119A5EF09006965F0 /* ChatInput.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3896919A5EF09006965F0 /* ChatInput.m */; };
-		D6C3897219A5EF09006965F0 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3896B19A5EF09006965F0 /* MessageCell.m */; };
-		D6C3897319A5EF09006965F0 /* Previous.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C3896D19A5EF09006965F0 /* Previous.png */; };
-		D6C3897419A5EF09006965F0 /* TopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3896F19A5EF09006965F0 /* TopBar.m */; };
-		D6C3897819A5F101006965F0 /* GTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3897719A5F101006965F0 /* GTMessageViewController.m */; };
-		D6C3897C19A5F266006965F0 /* GTInboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3897B19A5F266006965F0 /* GTInboxTableViewController.m */; };
-		D6C3897F19A5F400006965F0 /* GTSearchRideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3897E19A5F400006965F0 /* GTSearchRideViewController.m */; };
-		D6CFEB9219A1E9A0001F74C2 /* NSManagedObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CFEB9119A1E9A0001F74C2 /* NSManagedObject+JSON.m */; };
 		D6CFEB9419A1FC1E001F74C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CFEB9319A1FC1E001F74C2 /* CoreData.framework */; };
-		D6D00FAF1988FDBB00FBBDF1 /* GTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D00FAE1988FDBB00FBBDF1 /* GTRegisterViewController.m */; };
-		D6D00FB5198906E200FBBDF1 /* GTRedisObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D00FB4198906E200FBBDF1 /* GTRedisObject.m */; };
 		D6E496A819866B5E00480AEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496A719866B5E00480AEE /* Foundation.framework */; };
 		D6E496AA19866B5E00480AEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496A919866B5E00480AEE /* CoreGraphics.framework */; };
 		D6E496AC19866B5E00480AEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496AB19866B5E00480AEE /* UIKit.framework */; };
-		D6E496B219866B5E00480AEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6E496B019866B5E00480AEE /* InfoPlist.strings */; };
-		D6E496B419866B5E00480AEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E496B319866B5E00480AEE /* main.m */; };
-		D6E496B819866B5E00480AEE /* GTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E496B719866B5E00480AEE /* GTAppDelegate.m */; };
-		D6E496BB19866B5E00480AEE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E496B919866B5E00480AEE /* Main_iPhone.storyboard */; };
-		D6E496BE19866B5E00480AEE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E496BC19866B5E00480AEE /* Main_iPad.storyboard */; };
-		D6E496C119866B5E00480AEE /* GTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E496C019866B5E00480AEE /* GTLoginViewController.m */; };
-		D6E496C319866B5E00480AEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E496C219866B5E00480AEE /* Images.xcassets */; };
 		D6E496CA19866B5E00480AEE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496C919866B5E00480AEE /* XCTest.framework */; };
 		D6E496CB19866B5E00480AEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496A719866B5E00480AEE /* Foundation.framework */; };
 		D6E496CC19866B5E00480AEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E496AB19866B5E00480AEE /* UIKit.framework */; };
 		D6E496D419866B5E00480AEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6E496D219866B5E00480AEE /* InfoPlist.strings */; };
 		D6E496D619866B5E00480AEE /* GoTogetherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E496D519866B5E00480AEE /* GoTogetherAppTests.m */; };
-		D6E496ED1986751800480AEE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E496EC1986751800480AEE /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +123,144 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2816638919ABB87F00BEB808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		2816638B19ABB87F00BEB808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2816638C19ABB87F00BEB808 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2816638E19ABB87F00BEB808 /* GTCreateRideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCreateRideViewController.h; sourceTree = "<group>"; };
+		2816638F19ABB87F00BEB808 /* GTCreateRideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCreateRideViewController.m; sourceTree = "<group>"; };
+		2816639019ABB87F00BEB808 /* GTDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDashboardViewController.h; sourceTree = "<group>"; };
+		2816639119ABB87F00BEB808 /* GTDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDashboardViewController.m; sourceTree = "<group>"; };
+		2816639219ABB87F00BEB808 /* GTDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDatePickerViewController.h; sourceTree = "<group>"; };
+		2816639319ABB87F00BEB808 /* GTDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDatePickerViewController.m; sourceTree = "<group>"; };
+		2816639419ABB87F00BEB808 /* GTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMapViewController.h; sourceTree = "<group>"; };
+		2816639519ABB87F00BEB808 /* GTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMapViewController.m; sourceTree = "<group>"; };
+		2816639619ABB87F00BEB808 /* GTRideMatchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRideMatchTableViewController.h; sourceTree = "<group>"; };
+		2816639719ABB87F00BEB808 /* GTRideMatchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRideMatchTableViewController.m; sourceTree = "<group>"; };
+		2816639819ABB87F00BEB808 /* GTSearchFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSearchFriendsViewController.h; sourceTree = "<group>"; };
+		2816639919ABB87F00BEB808 /* GTSearchFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSearchFriendsViewController.m; sourceTree = "<group>"; };
+		2816639A19ABB87F00BEB808 /* GTSearchRideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSearchRideViewController.h; sourceTree = "<group>"; };
+		2816639B19ABB87F00BEB808 /* GTSearchRideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSearchRideViewController.m; sourceTree = "<group>"; };
+		2816639C19ABB87F00BEB808 /* GTShowRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShowRouteViewController.h; sourceTree = "<group>"; };
+		2816639D19ABB87F00BEB808 /* GTShowRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShowRouteViewController.m; sourceTree = "<group>"; };
+		2816639E19ABB87F00BEB808 /* GTVerifyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTVerifyCarViewController.h; sourceTree = "<group>"; };
+		2816639F19ABB87F00BEB808 /* GTVerifyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTVerifyCarViewController.m; sourceTree = "<group>"; };
+		281663A119ABB87F00BEB808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		281663A219ABB87F00BEB808 /* GoTogetherApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoTogetherApp-Info.plist"; sourceTree = "<group>"; };
+		281663A319ABB87F00BEB808 /* GoTogetherApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoTogetherApp-Prefix.pch"; sourceTree = "<group>"; };
+		281663A419ABB87F00BEB808 /* GTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAppDelegate.h; sourceTree = "<group>"; };
+		281663A519ABB87F00BEB808 /* GTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAppDelegate.m; sourceTree = "<group>"; };
+		281663A619ABB87F00BEB808 /* GTDriveMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDriveMenuViewController.h; sourceTree = "<group>"; };
+		281663A719ABB87F00BEB808 /* GTDriveMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDriveMenuViewController.m; sourceTree = "<group>"; };
+		281663A819ABB87F00BEB808 /* GTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLoginViewController.h; sourceTree = "<group>"; };
+		281663A919ABB87F00BEB808 /* GTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLoginViewController.m; sourceTree = "<group>"; };
+		281663AA19ABB87F00BEB808 /* GTMyMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMyMenuViewController.h; sourceTree = "<group>"; };
+		281663AB19ABB87F00BEB808 /* GTMyMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMyMenuViewController.m; sourceTree = "<group>"; };
+		281663AC19ABB87F00BEB808 /* GTRedisObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRedisObject.h; sourceTree = "<group>"; };
+		281663AD19ABB87F00BEB808 /* GTRedisObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRedisObject.m; sourceTree = "<group>"; };
+		281663AE19ABB87F00BEB808 /* GTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRegisterViewController.h; sourceTree = "<group>"; };
+		281663AF19ABB87F00BEB808 /* GTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRegisterViewController.m; sourceTree = "<group>"; };
+		281663B019ABB87F00BEB808 /* GTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRootViewController.h; sourceTree = "<group>"; };
+		281663B119ABB87F00BEB808 /* GTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRootViewController.m; sourceTree = "<group>"; };
+		281663B219ABB87F00BEB808 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		281663B519ABB87F00BEB808 /* FDTakeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTakeController.h; sourceTree = "<group>"; };
+		281663B619ABB87F00BEB808 /* FDTakeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTakeController.m; sourceTree = "<group>"; };
+		281663B819ABB87F00BEB808 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		281663BA19ABB87F00BEB808 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		281663BB19ABB87F00BEB808 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		281663BE19ABB87F00BEB808 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		281663BF19ABB87F00BEB808 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		281663C019ABB87F00BEB808 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		281663C119ABB87F00BEB808 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		281663C219ABB87F00BEB808 /* MGSpotyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSpotyViewController.h; sourceTree = "<group>"; };
+		281663C319ABB87F00BEB808 /* MGSpotyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSpotyViewController.m; sourceTree = "<group>"; };
+		281663C519ABB87F00BEB808 /* BFPaperTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPaperTableViewCell.h; sourceTree = "<group>"; };
+		281663C619ABB87F00BEB808 /* BFPaperTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPaperTableViewCell.m; sourceTree = "<group>"; };
+		281663C719ABB87F00BEB808 /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
+		281663C819ABB87F00BEB808 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
+		281663CB19ABB87F00BEB808 /* async.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = async.c; sourceTree = "<group>"; };
+		281663CC19ABB87F00BEB808 /* async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async.h; sourceTree = "<group>"; };
+		281663CD19ABB87F00BEB808 /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dict.c; sourceTree = "<group>"; };
+		281663CE19ABB87F00BEB808 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		281663CF19ABB87F00BEB808 /* fmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmacros.h; sourceTree = "<group>"; };
+		281663D019ABB87F00BEB808 /* hiredis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hiredis.c; sourceTree = "<group>"; };
+		281663D119ABB87F00BEB808 /* hiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hiredis.h; sourceTree = "<group>"; };
+		281663D219ABB87F00BEB808 /* net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net.c; sourceTree = "<group>"; };
+		281663D319ABB87F00BEB808 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		281663D419ABB87F00BEB808 /* sds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sds.c; sourceTree = "<group>"; };
+		281663D519ABB87F00BEB808 /* sds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sds.h; sourceTree = "<group>"; };
+		281663D619ABB87F00BEB808 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		281663D719ABB87F00BEB808 /* ObjCHiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCHiredis.h; sourceTree = "<group>"; };
+		281663D819ABB87F00BEB808 /* ObjCHiredis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCHiredis.m; sourceTree = "<group>"; };
+		281663DA19ABB87F00BEB808 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		281663DB19ABB87F00BEB808 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		281663DC19ABB87F00BEB808 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		281663DD19ABB87F00BEB808 /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		281663DE19ABB87F00BEB808 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		281663DF19ABB87F00BEB808 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		281663E119ABB87F00BEB808 /* BAMSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAMSettings.h; sourceTree = "<group>"; };
+		281663E219ABB87F00BEB808 /* BAMSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMSettings.m; sourceTree = "<group>"; };
+		281663E419ABB87F00BEB808 /* ChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
+		281663E519ABB87F00BEB808 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
+		281663E619ABB87F00BEB808 /* ChatInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatInput.h; sourceTree = "<group>"; };
+		281663E719ABB87F00BEB808 /* ChatInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatInput.m; sourceTree = "<group>"; };
+		281663E819ABB87F00BEB808 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		281663E919ABB87F00BEB808 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		281663EA19ABB87F00BEB808 /* MyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMacros.h; sourceTree = "<group>"; };
+		281663EB19ABB87F00BEB808 /* TopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBar.h; sourceTree = "<group>"; };
+		281663EC19ABB87F00BEB808 /* TopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBar.m; sourceTree = "<group>"; };
+		281663EE19ABB87F00BEB808 /* TextFieldValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldValidator.h; sourceTree = "<group>"; };
+		281663EF19ABB87F00BEB808 /* TextFieldValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidator.m; sourceTree = "<group>"; };
+		281663F019ABB87F00BEB808 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		281663F219ABB87F00BEB808 /* GTInboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTInboxTableViewController.h; sourceTree = "<group>"; };
+		281663F319ABB87F00BEB808 /* GTInboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTInboxTableViewController.m; sourceTree = "<group>"; };
+		281663F419ABB87F00BEB808 /* GTMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMessageViewController.h; sourceTree = "<group>"; };
+		281663F519ABB87F00BEB808 /* GTMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMessageViewController.m; sourceTree = "<group>"; };
+		281663F819ABB87F00BEB808 /* database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = database.xcdatamodel; sourceTree = "<group>"; };
+		281663F919ABB87F00BEB808 /* GTSearchRideTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSearchRideTableViewCell.h; sourceTree = "<group>"; };
+		281663FA19ABB87F00BEB808 /* GTSearchRideTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSearchRideTableViewCell.m; sourceTree = "<group>"; };
+		281663FB19ABB87F00BEB808 /* InterestedUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestedUsers.h; sourceTree = "<group>"; };
+		281663FC19ABB87F00BEB808 /* InterestedUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestedUsers.m; sourceTree = "<group>"; };
+		281663FD19ABB87F00BEB808 /* NSManagedObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+JSON.h"; sourceTree = "<group>"; };
+		281663FE19ABB87F00BEB808 /* NSManagedObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+JSON.m"; sourceTree = "<group>"; };
+		281663FF19ABB87F00BEB808 /* Ride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ride.h; sourceTree = "<group>"; };
+		2816640019ABB87F00BEB808 /* Ride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ride.m; sourceTree = "<group>"; };
+		2816640119ABB87F00BEB808 /* SearchRide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRide.h; sourceTree = "<group>"; };
+		2816640219ABB87F00BEB808 /* SearchRide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRide.m; sourceTree = "<group>"; };
+		2816640319ABB87F00BEB808 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		2816640419ABB87F00BEB808 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		2816640519ABB87F00BEB808 /* UserWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWorker.h; sourceTree = "<group>"; };
+		2816640619ABB87F00BEB808 /* UserWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWorker.m; sourceTree = "<group>"; };
+		2816640719ABB87F00BEB808 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		2816640819ABB87F00BEB808 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		2816640919ABB87F00BEB808 /* PlaceMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceMark.h; sourceTree = "<group>"; };
+		2816640A19ABB87F00BEB808 /* PlaceMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceMark.m; sourceTree = "<group>"; };
+		2816640C19ABB87F00BEB808 /* GTProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTProfileViewController.h; sourceTree = "<group>"; };
+		2816640D19ABB87F00BEB808 /* GTProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTProfileViewController.m; sourceTree = "<group>"; };
+		2816640E19ABB87F00BEB808 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		2816640F19ABB87F00BEB808 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		2816641119ABB87F00BEB808 /* add@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641219ABB87F00BEB808 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		2816641319ABB87F00BEB808 /* cost@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cost@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641419ABB87F00BEB808 /* dashboard@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dashboard@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641519ABB87F00BEB808 /* detail@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641619ABB87F00BEB808 /* find@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641719ABB87F00BEB808 /* icon_map.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_map.PNG; sourceTree = "<group>"; };
+		2816641819ABB87F00BEB808 /* locality.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = locality.plist; sourceTree = "<group>"; };
+		2816641919ABB87F00BEB808 /* logout@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641A19ABB87F00BEB808 /* make@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "make@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641B19ABB87F00BEB808 /* menu@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x~ipad.png"; sourceTree = "<group>"; };
+		2816641C19ABB87F00BEB808 /* menu@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641D19ABB87F00BEB808 /* message@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x~iphone.png"; sourceTree = "<group>"; };
+		2816641E19ABB87F00BEB808 /* Person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Person.png; sourceTree = "<group>"; };
+		2816641F19ABB87F00BEB808 /* profile@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x~iphone.png"; sourceTree = "<group>"; };
+		2816642019ABB87F00BEB808 /* ride@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ride@2x~ipad.png"; sourceTree = "<group>"; };
+		2816642119ABB87F00BEB808 /* ride@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ride@2x~iphone.png"; sourceTree = "<group>"; };
+		2816642219ABB87F00BEB808 /* Search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Search.plist; sourceTree = "<group>"; };
+		2816642319ABB87F00BEB808 /* settings@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x~iphone.png"; sourceTree = "<group>"; };
+		2816642419ABB87F00BEB808 /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
+		2816642619ABB87F00BEB808 /* GTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSettingsViewController.h; sourceTree = "<group>"; };
+		2816642719ABB87F00BEB808 /* GTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSettingsViewController.m; sourceTree = "<group>"; };
+		2816642819ABB87F00BEB808 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		D651D4D819A5C8CE00889B11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D651D4DA19A5C8E600889B11 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D651D4DC19A5C8F100889B11 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -108,118 +274,16 @@
 		D651D4EC19A5C95700889B11 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D651D4EE19A5CA2B00889B11 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = GoTogetherApp/lib/GoogleMap/GoogleMaps.framework; sourceTree = "<group>"; };
 		D651D4F019A5CD0B00889B11 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoTogetherApp/lib/GoogleMap/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		D670DF99199A44EC000F0640 /* database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = database.xcdatamodel; sourceTree = "<group>"; };
-		D680B51A1993B6C40040B305 /* async.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = async.c; sourceTree = "<group>"; };
-		D680B51B1993B6C40040B305 /* async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async.h; sourceTree = "<group>"; };
-		D680B51C1993B6C40040B305 /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dict.c; sourceTree = "<group>"; };
-		D680B51D1993B6C40040B305 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
-		D680B51E1993B6C40040B305 /* fmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmacros.h; sourceTree = "<group>"; };
-		D680B51F1993B6C40040B305 /* hiredis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hiredis.c; sourceTree = "<group>"; };
-		D680B5201993B6C40040B305 /* hiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hiredis.h; sourceTree = "<group>"; };
-		D680B5211993B6C40040B305 /* net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net.c; sourceTree = "<group>"; };
-		D680B5221993B6C40040B305 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
-		D680B5231993B6C40040B305 /* sds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sds.c; sourceTree = "<group>"; };
-		D680B5241993B6C40040B305 /* sds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sds.h; sourceTree = "<group>"; };
-		D680B5251993B6C40040B305 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
-		D680B5261993B6C40040B305 /* ObjCHiredis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCHiredis.h; sourceTree = "<group>"; };
-		D680B5271993B6C40040B305 /* ObjCHiredis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCHiredis.m; sourceTree = "<group>"; };
-		D6854CB1199B9144001FB65F /* FDTakeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTakeController.h; sourceTree = "<group>"; };
-		D6854CB2199B9144001FB65F /* FDTakeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTakeController.m; sourceTree = "<group>"; };
-		D6854CB4199B99C9001FB65F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		D6854CB5199B99C9001FB65F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		D6854CB7199B99FF001FB65F /* UserWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWorker.h; sourceTree = "<group>"; };
-		D6854CB8199B99FF001FB65F /* UserWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWorker.m; sourceTree = "<group>"; };
-		D686DA861994AAC300622C1D /* BAMSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAMSettings.h; sourceTree = "<group>"; };
-		D686DA871994AAC300622C1D /* BAMSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMSettings.m; sourceTree = "<group>"; };
-		D686DA8A1994AC1000622C1D /* GTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSettingsViewController.h; sourceTree = "<group>"; };
-		D686DA8B1994AC1000622C1D /* GTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSettingsViewController.m; sourceTree = "<group>"; };
-		D686DA8D1994B78700622C1D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		D686DA931994CDC200622C1D /* BFPaperTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPaperTableViewCell.h; sourceTree = "<group>"; };
-		D686DA941994CDC200622C1D /* BFPaperTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPaperTableViewCell.m; sourceTree = "<group>"; };
-		D686DA951994CDC200622C1D /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
-		D686DA961994CDC200622C1D /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
-		D686DA9A1994E1C700622C1D /* GTDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDashboardViewController.h; sourceTree = "<group>"; };
-		D686DA9B1994E1C700622C1D /* GTDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDashboardViewController.m; sourceTree = "<group>"; };
-		D699239619939A12006A7DCC /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
-		D699239719939A12006A7DCC /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
-		D699239819939A12006A7DCC /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
-		D699239919939A12006A7DCC /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
-		D699239A19939A12006A7DCC /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
-		D699239B19939A12006A7DCC /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
-		D699239F19939A38006A7DCC /* GTDriveMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDriveMenuViewController.h; sourceTree = "<group>"; };
-		D69923A019939A38006A7DCC /* GTDriveMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDriveMenuViewController.m; sourceTree = "<group>"; };
-		D69923A119939A38006A7DCC /* GTMyMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMyMenuViewController.h; sourceTree = "<group>"; };
-		D69923A219939A38006A7DCC /* GTMyMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMyMenuViewController.m; sourceTree = "<group>"; };
-		D69923A719939A61006A7DCC /* GTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRootViewController.h; sourceTree = "<group>"; };
-		D69923A819939A62006A7DCC /* GTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRootViewController.m; sourceTree = "<group>"; };
-		D6A1197719A4765B00FEE8E1 /* GTCreateRideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCreateRideViewController.h; sourceTree = "<group>"; };
-		D6A1197819A4765B00FEE8E1 /* GTCreateRideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCreateRideViewController.m; sourceTree = "<group>"; };
-		D6A1197A19A4804400FEE8E1 /* GTShowRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShowRouteViewController.h; sourceTree = "<group>"; };
-		D6A1197B19A4804400FEE8E1 /* GTShowRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShowRouteViewController.m; sourceTree = "<group>"; };
-		D6A1197D19A4A06300FEE8E1 /* Ride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ride.h; sourceTree = "<group>"; };
-		D6A1197E19A4A06300FEE8E1 /* Ride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ride.m; sourceTree = "<group>"; };
-		D6A1198019A4A06400FEE8E1 /* SearchRide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRide.h; sourceTree = "<group>"; };
-		D6A1198119A4A06400FEE8E1 /* SearchRide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRide.m; sourceTree = "<group>"; };
-		D6A1198319A4A06400FEE8E1 /* InterestedUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestedUsers.h; sourceTree = "<group>"; };
-		D6A1198419A4A06400FEE8E1 /* InterestedUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestedUsers.m; sourceTree = "<group>"; };
-		D6C3894F19A5D742006965F0 /* TextFieldValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldValidator.h; sourceTree = "<group>"; };
-		D6C3895019A5D742006965F0 /* TextFieldValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidator.m; sourceTree = "<group>"; };
-		D6C3895419A5D7E2006965F0 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		D6C3895519A5D7E2006965F0 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		D6C3895619A5D7E2006965F0 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
-		D6C3895719A5D7E2006965F0 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
-		D6C3895819A5D7E2006965F0 /* MGSpotyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSpotyViewController.h; sourceTree = "<group>"; };
-		D6C3895919A5D7E2006965F0 /* MGSpotyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSpotyViewController.m; sourceTree = "<group>"; };
-		D6C3895E19A5D8A7006965F0 /* GTProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTProfileViewController.h; sourceTree = "<group>"; };
-		D6C3895F19A5D8A7006965F0 /* GTProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTProfileViewController.m; sourceTree = "<group>"; };
-		D6C3896119A5DDBB006965F0 /* error@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x~ipad.png"; sourceTree = "<group>"; };
-		D6C3896219A5DDBB006965F0 /* error@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x~iphone.png"; sourceTree = "<group>"; };
-		D6C3896619A5EF09006965F0 /* ChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
-		D6C3896719A5EF09006965F0 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
-		D6C3896819A5EF09006965F0 /* ChatInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatInput.h; sourceTree = "<group>"; };
-		D6C3896919A5EF09006965F0 /* ChatInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatInput.m; sourceTree = "<group>"; };
-		D6C3896A19A5EF09006965F0 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
-		D6C3896B19A5EF09006965F0 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
-		D6C3896C19A5EF09006965F0 /* MyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMacros.h; sourceTree = "<group>"; };
-		D6C3896D19A5EF09006965F0 /* Previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Previous.png; sourceTree = "<group>"; };
-		D6C3896E19A5EF09006965F0 /* TopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBar.h; sourceTree = "<group>"; };
-		D6C3896F19A5EF09006965F0 /* TopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBar.m; sourceTree = "<group>"; };
-		D6C3897619A5F101006965F0 /* GTMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMessageViewController.h; sourceTree = "<group>"; };
-		D6C3897719A5F101006965F0 /* GTMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMessageViewController.m; sourceTree = "<group>"; };
-		D6C3897A19A5F266006965F0 /* GTInboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTInboxTableViewController.h; sourceTree = "<group>"; };
-		D6C3897B19A5F266006965F0 /* GTInboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTInboxTableViewController.m; sourceTree = "<group>"; };
-		D6C3897D19A5F400006965F0 /* GTSearchRideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSearchRideViewController.h; sourceTree = "<group>"; };
-		D6C3897E19A5F400006965F0 /* GTSearchRideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSearchRideViewController.m; sourceTree = "<group>"; };
-		D6CFEB9019A1E9A0001F74C2 /* NSManagedObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+JSON.h"; sourceTree = "<group>"; };
-		D6CFEB9119A1E9A0001F74C2 /* NSManagedObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+JSON.m"; sourceTree = "<group>"; };
 		D6CFEB9319A1FC1E001F74C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		D6D00FAD1988FDBB00FBBDF1 /* GTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRegisterViewController.h; sourceTree = "<group>"; };
-		D6D00FAE1988FDBB00FBBDF1 /* GTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRegisterViewController.m; sourceTree = "<group>"; };
-		D6D00FB3198906E200FBBDF1 /* GTRedisObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRedisObject.h; sourceTree = "<group>"; };
-		D6D00FB4198906E200FBBDF1 /* GTRedisObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRedisObject.m; sourceTree = "<group>"; };
 		D6E496A419866B5E00480AEE /* GoTogetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTogetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E496A719866B5E00480AEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6E496A919866B5E00480AEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D6E496AB19866B5E00480AEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D6E496AF19866B5E00480AEE /* GoTogetherApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoTogetherApp-Info.plist"; sourceTree = "<group>"; };
-		D6E496B119866B5E00480AEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D6E496B319866B5E00480AEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D6E496B519866B5E00480AEE /* GoTogetherApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoTogetherApp-Prefix.pch"; sourceTree = "<group>"; };
-		D6E496B619866B5E00480AEE /* GTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTAppDelegate.h; sourceTree = "<group>"; };
-		D6E496B719866B5E00480AEE /* GTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTAppDelegate.m; sourceTree = "<group>"; };
-		D6E496BA19866B5E00480AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		D6E496BD19866B5E00480AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		D6E496BF19866B5E00480AEE /* GTLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTLoginViewController.h; sourceTree = "<group>"; };
-		D6E496C019866B5E00480AEE /* GTLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTLoginViewController.m; sourceTree = "<group>"; };
-		D6E496C219866B5E00480AEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D6E496C819866B5E00480AEE /* GoTogetherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTogetherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E496C919866B5E00480AEE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D6E496D119866B5E00480AEE /* GoTogetherAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoTogetherAppTests-Info.plist"; sourceTree = "<group>"; };
 		D6E496D319866B5E00480AEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6E496D519866B5E00480AEE /* GoTogetherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoTogetherAppTests.m; sourceTree = "<group>"; };
-		D6E496EB1986751800480AEE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		D6E496EC1986751800480AEE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		D6EEF62C19A37FF70047BB57 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +305,7 @@
 				D6CFEB9419A1FC1E001F74C2 /* CoreData.framework in Frameworks */,
 				D651D4D919A5C8CE00889B11 /* AVFoundation.framework in Frameworks */,
 				D6E496AA19866B5E00480AEE /* CoreGraphics.framework in Frameworks */,
+				2816643F19ABB87F00BEB808 /* GoogleMaps.framework in Frameworks */,
 				D6E496AC19866B5E00480AEE /* UIKit.framework in Frameworks */,
 				D6E496A819866B5E00480AEE /* Foundation.framework in Frameworks */,
 			);
@@ -259,196 +324,308 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D670DF97199A44AB000F0640 /* Models */ = {
+		2816638719ABB87F00BEB808 /* GoTogetherApp */ = {
 			isa = PBXGroup;
 			children = (
-				D670DF98199A44EC000F0640 /* database.xcdatamodeld */,
-				D6A1198319A4A06400FEE8E1 /* InterestedUsers.h */,
-				D6A1198419A4A06400FEE8E1 /* InterestedUsers.m */,
-				D6A1198019A4A06400FEE8E1 /* SearchRide.h */,
-				D6A1198119A4A06400FEE8E1 /* SearchRide.m */,
-				D6A1197D19A4A06300FEE8E1 /* Ride.h */,
-				D6A1197E19A4A06300FEE8E1 /* Ride.m */,
-				D6854CB4199B99C9001FB65F /* User.h */,
-				D6854CB5199B99C9001FB65F /* User.m */,
-				D6854CB7199B99FF001FB65F /* UserWorker.h */,
-				D6854CB8199B99FF001FB65F /* UserWorker.m */,
-				D6CFEB9019A1E9A0001F74C2 /* NSManagedObject+JSON.h */,
-				D6CFEB9119A1E9A0001F74C2 /* NSManagedObject+JSON.m */,
+				2816638819ABB87F00BEB808 /* Main_iPad.storyboard */,
+				2816638A19ABB87F00BEB808 /* Main_iPhone.storyboard */,
+				2816638C19ABB87F00BEB808 /* Constants.h */,
+				2816638D19ABB87F00BEB808 /* Dashboard */,
+				281663A019ABB87F00BEB808 /* InfoPlist.strings */,
+				281663A219ABB87F00BEB808 /* GoTogetherApp-Info.plist */,
+				281663A319ABB87F00BEB808 /* GoTogetherApp-Prefix.pch */,
+				281663A419ABB87F00BEB808 /* GTAppDelegate.h */,
+				281663A519ABB87F00BEB808 /* GTAppDelegate.m */,
+				281663A619ABB87F00BEB808 /* GTDriveMenuViewController.h */,
+				281663A719ABB87F00BEB808 /* GTDriveMenuViewController.m */,
+				281663A819ABB87F00BEB808 /* GTLoginViewController.h */,
+				281663A919ABB87F00BEB808 /* GTLoginViewController.m */,
+				281663AA19ABB87F00BEB808 /* GTMyMenuViewController.h */,
+				281663AB19ABB87F00BEB808 /* GTMyMenuViewController.m */,
+				281663AC19ABB87F00BEB808 /* GTRedisObject.h */,
+				281663AD19ABB87F00BEB808 /* GTRedisObject.m */,
+				281663AE19ABB87F00BEB808 /* GTRegisterViewController.h */,
+				281663AF19ABB87F00BEB808 /* GTRegisterViewController.m */,
+				281663B019ABB87F00BEB808 /* GTRootViewController.h */,
+				281663B119ABB87F00BEB808 /* GTRootViewController.m */,
+				281663B219ABB87F00BEB808 /* Images.xcassets */,
+				281663B319ABB87F00BEB808 /* lib */,
+				281663F019ABB87F00BEB808 /* main.m */,
+				281663F119ABB87F00BEB808 /* Message */,
+				281663F619ABB87F00BEB808 /* Models */,
+				2816640719ABB87F00BEB808 /* Place.h */,
+				2816640819ABB87F00BEB808 /* Place.m */,
+				2816640919ABB87F00BEB808 /* PlaceMark.h */,
+				2816640A19ABB87F00BEB808 /* PlaceMark.m */,
+				2816640B19ABB87F00BEB808 /* profile */,
+				2816640E19ABB87F00BEB808 /* RegexKitLite.h */,
+				2816640F19ABB87F00BEB808 /* RegexKitLite.m */,
+				2816641019ABB87F00BEB808 /* Resources */,
+				2816642519ABB87F00BEB808 /* Settings */,
 			);
-			path = Models;
+			path = GoTogetherApp;
 			sourceTree = "<group>";
 		};
-		D680B5181993B6C40040B305 /* redis */ = {
+		2816638D19ABB87F00BEB808 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				D680B5191993B6C40040B305 /* Hiredis */,
-				D680B5261993B6C40040B305 /* ObjCHiredis.h */,
-				D680B5271993B6C40040B305 /* ObjCHiredis.m */,
-			);
-			path = redis;
-			sourceTree = "<group>";
-		};
-		D680B5191993B6C40040B305 /* Hiredis */ = {
-			isa = PBXGroup;
-			children = (
-				D680B51A1993B6C40040B305 /* async.c */,
-				D680B51B1993B6C40040B305 /* async.h */,
-				D680B51C1993B6C40040B305 /* dict.c */,
-				D680B51D1993B6C40040B305 /* dict.h */,
-				D680B51E1993B6C40040B305 /* fmacros.h */,
-				D680B51F1993B6C40040B305 /* hiredis.c */,
-				D680B5201993B6C40040B305 /* hiredis.h */,
-				D680B5211993B6C40040B305 /* net.c */,
-				D680B5221993B6C40040B305 /* net.h */,
-				D680B5231993B6C40040B305 /* sds.c */,
-				D680B5241993B6C40040B305 /* sds.h */,
-				D680B5251993B6C40040B305 /* util.h */,
-			);
-			path = Hiredis;
-			sourceTree = "<group>";
-		};
-		D6854CB0199B9144001FB65F /* FDTake */ = {
-			isa = PBXGroup;
-			children = (
-				D6854CB1199B9144001FB65F /* FDTakeController.h */,
-				D6854CB2199B9144001FB65F /* FDTakeController.m */,
-			);
-			path = FDTake;
-			sourceTree = "<group>";
-		};
-		D686DA851994AAC300622C1D /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				D686DA861994AAC300622C1D /* BAMSettings.h */,
-				D686DA871994AAC300622C1D /* BAMSettings.m */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		D686DA891994ABF500622C1D /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				D686DA8D1994B78700622C1D /* Settings.bundle */,
-				D686DA8A1994AC1000622C1D /* GTSettingsViewController.h */,
-				D686DA8B1994AC1000622C1D /* GTSettingsViewController.m */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		D686DA921994CDC200622C1D /* PaperCells */ = {
-			isa = PBXGroup;
-			children = (
-				D686DA931994CDC200622C1D /* BFPaperTableViewCell.h */,
-				D686DA941994CDC200622C1D /* BFPaperTableViewCell.m */,
-				D686DA951994CDC200622C1D /* UIColor+BFPaperColors.h */,
-				D686DA961994CDC200622C1D /* UIColor+BFPaperColors.m */,
-			);
-			path = PaperCells;
-			sourceTree = "<group>";
-		};
-		D686DA991994E1C700622C1D /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				D6A1197719A4765B00FEE8E1 /* GTCreateRideViewController.h */,
-				D6A1197819A4765B00FEE8E1 /* GTCreateRideViewController.m */,
-				D686DA9A1994E1C700622C1D /* GTDashboardViewController.h */,
-				D686DA9B1994E1C700622C1D /* GTDashboardViewController.m */,
-				D6A1197A19A4804400FEE8E1 /* GTShowRouteViewController.h */,
-				D6A1197B19A4804400FEE8E1 /* GTShowRouteViewController.m */,
-				D6C3897D19A5F400006965F0 /* GTSearchRideViewController.h */,
-				D6C3897E19A5F400006965F0 /* GTSearchRideViewController.m */,
+				2816638E19ABB87F00BEB808 /* GTCreateRideViewController.h */,
+				2816638F19ABB87F00BEB808 /* GTCreateRideViewController.m */,
+				2816639019ABB87F00BEB808 /* GTDashboardViewController.h */,
+				2816639119ABB87F00BEB808 /* GTDashboardViewController.m */,
+				2816639219ABB87F00BEB808 /* GTDatePickerViewController.h */,
+				2816639319ABB87F00BEB808 /* GTDatePickerViewController.m */,
+				2816639419ABB87F00BEB808 /* GTMapViewController.h */,
+				2816639519ABB87F00BEB808 /* GTMapViewController.m */,
+				2816639619ABB87F00BEB808 /* GTRideMatchTableViewController.h */,
+				2816639719ABB87F00BEB808 /* GTRideMatchTableViewController.m */,
+				2816639819ABB87F00BEB808 /* GTSearchFriendsViewController.h */,
+				2816639919ABB87F00BEB808 /* GTSearchFriendsViewController.m */,
+				2816639A19ABB87F00BEB808 /* GTSearchRideViewController.h */,
+				2816639B19ABB87F00BEB808 /* GTSearchRideViewController.m */,
+				2816639C19ABB87F00BEB808 /* GTShowRouteViewController.h */,
+				2816639D19ABB87F00BEB808 /* GTShowRouteViewController.m */,
+				2816639E19ABB87F00BEB808 /* GTVerifyCarViewController.h */,
+				2816639F19ABB87F00BEB808 /* GTVerifyCarViewController.m */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
-		D699239519939A12006A7DCC /* RESideMenu */ = {
+		281663B319ABB87F00BEB808 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				D699239619939A12006A7DCC /* RECommonFunctions.h */,
-				D699239719939A12006A7DCC /* RECommonFunctions.m */,
-				D699239819939A12006A7DCC /* RESideMenu.h */,
-				D699239919939A12006A7DCC /* RESideMenu.m */,
-				D699239A19939A12006A7DCC /* UIViewController+RESideMenu.h */,
-				D699239B19939A12006A7DCC /* UIViewController+RESideMenu.m */,
+				281663B419ABB87F00BEB808 /* FDTake */,
+				281663B719ABB87F00BEB808 /* GoogleMap */,
+				281663B919ABB87F00BEB808 /* hud */,
+				281663BC19ABB87F00BEB808 /* MGSpotyViewController */,
+				281663C419ABB87F00BEB808 /* PaperCells */,
+				281663C919ABB87F00BEB808 /* redis */,
+				281663D919ABB87F00BEB808 /* RESideMenu */,
+				281663E019ABB87F00BEB808 /* Settings */,
+				281663E319ABB87F00BEB808 /* Simple Chat */,
+				281663ED19ABB87F00BEB808 /* TextFieldValidator */,
 			);
-			path = RESideMenu;
+			path = lib;
 			sourceTree = "<group>";
 		};
-		D6C3894E19A5D742006965F0 /* TextFieldValidator */ = {
+		281663B419ABB87F00BEB808 /* FDTake */ = {
 			isa = PBXGroup;
 			children = (
-				D6C3896119A5DDBB006965F0 /* error@2x~ipad.png */,
-				D6C3896219A5DDBB006965F0 /* error@2x~iphone.png */,
-				D6C3894F19A5D742006965F0 /* TextFieldValidator.h */,
-				D6C3895019A5D742006965F0 /* TextFieldValidator.m */,
+				281663B519ABB87F00BEB808 /* FDTakeController.h */,
+				281663B619ABB87F00BEB808 /* FDTakeController.m */,
 			);
-			path = TextFieldValidator;
+			path = FDTake;
 			sourceTree = "<group>";
 		};
-		D6C3895219A5D7E2006965F0 /* MGSpotyViewController */ = {
+		281663B719ABB87F00BEB808 /* GoogleMap */ = {
 			isa = PBXGroup;
 			children = (
-				D6C3895319A5D7E2006965F0 /* ImageEffects */,
-				D6C3895819A5D7E2006965F0 /* MGSpotyViewController.h */,
-				D6C3895919A5D7E2006965F0 /* MGSpotyViewController.m */,
+				281663B819ABB87F00BEB808 /* GoogleMaps.framework */,
+			);
+			path = GoogleMap;
+			sourceTree = "<group>";
+		};
+		281663B919ABB87F00BEB808 /* hud */ = {
+			isa = PBXGroup;
+			children = (
+				281663BA19ABB87F00BEB808 /* MBProgressHUD.h */,
+				281663BB19ABB87F00BEB808 /* MBProgressHUD.m */,
+			);
+			path = hud;
+			sourceTree = "<group>";
+		};
+		281663BC19ABB87F00BEB808 /* MGSpotyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				281663BD19ABB87F00BEB808 /* ImageEffects */,
+				281663C219ABB87F00BEB808 /* MGSpotyViewController.h */,
+				281663C319ABB87F00BEB808 /* MGSpotyViewController.m */,
 			);
 			path = MGSpotyViewController;
 			sourceTree = "<group>";
 		};
-		D6C3895319A5D7E2006965F0 /* ImageEffects */ = {
+		281663BD19ABB87F00BEB808 /* ImageEffects */ = {
 			isa = PBXGroup;
 			children = (
-				D6C3895419A5D7E2006965F0 /* UIImage+ImageEffects.h */,
-				D6C3895519A5D7E2006965F0 /* UIImage+ImageEffects.m */,
-				D6C3895619A5D7E2006965F0 /* UIImageView+LBBlurredImage.h */,
-				D6C3895719A5D7E2006965F0 /* UIImageView+LBBlurredImage.m */,
+				281663BE19ABB87F00BEB808 /* UIImage+ImageEffects.h */,
+				281663BF19ABB87F00BEB808 /* UIImage+ImageEffects.m */,
+				281663C019ABB87F00BEB808 /* UIImageView+LBBlurredImage.h */,
+				281663C119ABB87F00BEB808 /* UIImageView+LBBlurredImage.m */,
 			);
 			path = ImageEffects;
 			sourceTree = "<group>";
 		};
-		D6C3895D19A5D8A7006965F0 /* profile */ = {
+		281663C419ABB87F00BEB808 /* PaperCells */ = {
 			isa = PBXGroup;
 			children = (
-				D6C3895E19A5D8A7006965F0 /* GTProfileViewController.h */,
-				D6C3895F19A5D8A7006965F0 /* GTProfileViewController.m */,
+				281663C519ABB87F00BEB808 /* BFPaperTableViewCell.h */,
+				281663C619ABB87F00BEB808 /* BFPaperTableViewCell.m */,
+				281663C719ABB87F00BEB808 /* UIColor+BFPaperColors.h */,
+				281663C819ABB87F00BEB808 /* UIColor+BFPaperColors.m */,
 			);
-			path = profile;
+			path = PaperCells;
 			sourceTree = "<group>";
 		};
-		D6C3896519A5EF09006965F0 /* Simple Chat */ = {
+		281663C919ABB87F00BEB808 /* redis */ = {
 			isa = PBXGroup;
 			children = (
-				D6C3896619A5EF09006965F0 /* ChatController.h */,
-				D6C3896719A5EF09006965F0 /* ChatController.m */,
-				D6C3896819A5EF09006965F0 /* ChatInput.h */,
-				D6C3896919A5EF09006965F0 /* ChatInput.m */,
-				D6C3896A19A5EF09006965F0 /* MessageCell.h */,
-				D6C3896B19A5EF09006965F0 /* MessageCell.m */,
-				D6C3896C19A5EF09006965F0 /* MyMacros.h */,
-				D6C3896D19A5EF09006965F0 /* Previous.png */,
-				D6C3896E19A5EF09006965F0 /* TopBar.h */,
-				D6C3896F19A5EF09006965F0 /* TopBar.m */,
+				281663CA19ABB87F00BEB808 /* Hiredis */,
+				281663D719ABB87F00BEB808 /* ObjCHiredis.h */,
+				281663D819ABB87F00BEB808 /* ObjCHiredis.m */,
+			);
+			path = redis;
+			sourceTree = "<group>";
+		};
+		281663CA19ABB87F00BEB808 /* Hiredis */ = {
+			isa = PBXGroup;
+			children = (
+				281663CB19ABB87F00BEB808 /* async.c */,
+				281663CC19ABB87F00BEB808 /* async.h */,
+				281663CD19ABB87F00BEB808 /* dict.c */,
+				281663CE19ABB87F00BEB808 /* dict.h */,
+				281663CF19ABB87F00BEB808 /* fmacros.h */,
+				281663D019ABB87F00BEB808 /* hiredis.c */,
+				281663D119ABB87F00BEB808 /* hiredis.h */,
+				281663D219ABB87F00BEB808 /* net.c */,
+				281663D319ABB87F00BEB808 /* net.h */,
+				281663D419ABB87F00BEB808 /* sds.c */,
+				281663D519ABB87F00BEB808 /* sds.h */,
+				281663D619ABB87F00BEB808 /* util.h */,
+			);
+			path = Hiredis;
+			sourceTree = "<group>";
+		};
+		281663D919ABB87F00BEB808 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				281663DA19ABB87F00BEB808 /* RECommonFunctions.h */,
+				281663DB19ABB87F00BEB808 /* RECommonFunctions.m */,
+				281663DC19ABB87F00BEB808 /* RESideMenu.h */,
+				281663DD19ABB87F00BEB808 /* RESideMenu.m */,
+				281663DE19ABB87F00BEB808 /* UIViewController+RESideMenu.h */,
+				281663DF19ABB87F00BEB808 /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		281663E019ABB87F00BEB808 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				281663E119ABB87F00BEB808 /* BAMSettings.h */,
+				281663E219ABB87F00BEB808 /* BAMSettings.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		281663E319ABB87F00BEB808 /* Simple Chat */ = {
+			isa = PBXGroup;
+			children = (
+				281663E419ABB87F00BEB808 /* ChatController.h */,
+				281663E519ABB87F00BEB808 /* ChatController.m */,
+				281663E619ABB87F00BEB808 /* ChatInput.h */,
+				281663E719ABB87F00BEB808 /* ChatInput.m */,
+				281663E819ABB87F00BEB808 /* MessageCell.h */,
+				281663E919ABB87F00BEB808 /* MessageCell.m */,
+				281663EA19ABB87F00BEB808 /* MyMacros.h */,
+				281663EB19ABB87F00BEB808 /* TopBar.h */,
+				281663EC19ABB87F00BEB808 /* TopBar.m */,
 			);
 			path = "Simple Chat";
 			sourceTree = "<group>";
 		};
-		D6C3897519A5F101006965F0 /* Message */ = {
+		281663ED19ABB87F00BEB808 /* TextFieldValidator */ = {
 			isa = PBXGroup;
 			children = (
-				D6C3897619A5F101006965F0 /* GTMessageViewController.h */,
-				D6C3897719A5F101006965F0 /* GTMessageViewController.m */,
-				D6C3897A19A5F266006965F0 /* GTInboxTableViewController.h */,
-				D6C3897B19A5F266006965F0 /* GTInboxTableViewController.m */,
+				281663EE19ABB87F00BEB808 /* TextFieldValidator.h */,
+				281663EF19ABB87F00BEB808 /* TextFieldValidator.m */,
+			);
+			path = TextFieldValidator;
+			sourceTree = "<group>";
+		};
+		281663F119ABB87F00BEB808 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				281663F219ABB87F00BEB808 /* GTInboxTableViewController.h */,
+				281663F319ABB87F00BEB808 /* GTInboxTableViewController.m */,
+				281663F419ABB87F00BEB808 /* GTMessageViewController.h */,
+				281663F519ABB87F00BEB808 /* GTMessageViewController.m */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		281663F619ABB87F00BEB808 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				281663F719ABB87F00BEB808 /* database.xcdatamodeld */,
+				281663F919ABB87F00BEB808 /* GTSearchRideTableViewCell.h */,
+				281663FA19ABB87F00BEB808 /* GTSearchRideTableViewCell.m */,
+				281663FB19ABB87F00BEB808 /* InterestedUsers.h */,
+				281663FC19ABB87F00BEB808 /* InterestedUsers.m */,
+				281663FD19ABB87F00BEB808 /* NSManagedObject+JSON.h */,
+				281663FE19ABB87F00BEB808 /* NSManagedObject+JSON.m */,
+				281663FF19ABB87F00BEB808 /* Ride.h */,
+				2816640019ABB87F00BEB808 /* Ride.m */,
+				2816640119ABB87F00BEB808 /* SearchRide.h */,
+				2816640219ABB87F00BEB808 /* SearchRide.m */,
+				2816640319ABB87F00BEB808 /* User.h */,
+				2816640419ABB87F00BEB808 /* User.m */,
+				2816640519ABB87F00BEB808 /* UserWorker.h */,
+				2816640619ABB87F00BEB808 /* UserWorker.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2816640B19ABB87F00BEB808 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				2816640C19ABB87F00BEB808 /* GTProfileViewController.h */,
+				2816640D19ABB87F00BEB808 /* GTProfileViewController.m */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		2816641019ABB87F00BEB808 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2816641119ABB87F00BEB808 /* add@2x~iphone.png */,
+				2816641219ABB87F00BEB808 /* check.png */,
+				2816641319ABB87F00BEB808 /* cost@2x~iphone.png */,
+				2816641419ABB87F00BEB808 /* dashboard@2x~iphone.png */,
+				2816641519ABB87F00BEB808 /* detail@2x~iphone.png */,
+				2816641619ABB87F00BEB808 /* find@2x~iphone.png */,
+				2816641719ABB87F00BEB808 /* icon_map.PNG */,
+				2816641819ABB87F00BEB808 /* locality.plist */,
+				2816641919ABB87F00BEB808 /* logout@2x~iphone.png */,
+				2816641A19ABB87F00BEB808 /* make@2x~iphone.png */,
+				2816641B19ABB87F00BEB808 /* menu@2x~ipad.png */,
+				2816641C19ABB87F00BEB808 /* menu@2x~iphone.png */,
+				2816641D19ABB87F00BEB808 /* message@2x~iphone.png */,
+				2816641E19ABB87F00BEB808 /* Person.png */,
+				2816641F19ABB87F00BEB808 /* profile@2x~iphone.png */,
+				2816642019ABB87F00BEB808 /* ride@2x~ipad.png */,
+				2816642119ABB87F00BEB808 /* ride@2x~iphone.png */,
+				2816642219ABB87F00BEB808 /* Search.plist */,
+				2816642319ABB87F00BEB808 /* settings@2x~iphone.png */,
+				2816642419ABB87F00BEB808 /* uncheck.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2816642519ABB87F00BEB808 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2816642619ABB87F00BEB808 /* GTSettingsViewController.h */,
+				2816642719ABB87F00BEB808 /* GTSettingsViewController.m */,
+				2816642819ABB87F00BEB808 /* Settings.bundle */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		D6E4969B19866B5E00480AEE = {
 			isa = PBXGroup;
 			children = (
+				2816638719ABB87F00BEB808 /* GoTogetherApp */,
 				D651D4F019A5CD0B00889B11 /* GoogleMaps.bundle */,
-				D6E496AD19866B5E00480AEE /* GoTogetherApp */,
 				D6E496CF19866B5E00480AEE /* GoTogetherAppTests */,
 				D6E496A619866B5E00480AEE /* Frameworks */,
 				D6E496A519866B5E00480AEE /* Products */,
@@ -488,49 +665,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D6E496AD19866B5E00480AEE /* GoTogetherApp */ = {
-			isa = PBXGroup;
-			children = (
-				D6C3897519A5F101006965F0 /* Message */,
-				D6C3895D19A5D8A7006965F0 /* profile */,
-				D6EEF62C19A37FF70047BB57 /* Constants.h */,
-				D670DF97199A44AB000F0640 /* Models */,
-				D686DA991994E1C700622C1D /* Dashboard */,
-				D686DA891994ABF500622C1D /* Settings */,
-				D69923A719939A61006A7DCC /* GTRootViewController.h */,
-				D69923A819939A62006A7DCC /* GTRootViewController.m */,
-				D699239F19939A38006A7DCC /* GTDriveMenuViewController.h */,
-				D69923A019939A38006A7DCC /* GTDriveMenuViewController.m */,
-				D69923A119939A38006A7DCC /* GTMyMenuViewController.h */,
-				D69923A219939A38006A7DCC /* GTMyMenuViewController.m */,
-				D6E496B619866B5E00480AEE /* GTAppDelegate.h */,
-				D6E496B719866B5E00480AEE /* GTAppDelegate.m */,
-				D6E496B919866B5E00480AEE /* Main_iPhone.storyboard */,
-				D6E496BC19866B5E00480AEE /* Main_iPad.storyboard */,
-				D6E496BF19866B5E00480AEE /* GTLoginViewController.h */,
-				D6E496C019866B5E00480AEE /* GTLoginViewController.m */,
-				D6D00FAD1988FDBB00FBBDF1 /* GTRegisterViewController.h */,
-				D6D00FAE1988FDBB00FBBDF1 /* GTRegisterViewController.m */,
-				D6D00FB3198906E200FBBDF1 /* GTRedisObject.h */,
-				D6D00FB4198906E200FBBDF1 /* GTRedisObject.m */,
-				D6E496C219866B5E00480AEE /* Images.xcassets */,
-				D6E496DF19866D3F00480AEE /* lib */,
-				D6E496AE19866B5E00480AEE /* Supporting Files */,
-			);
-			path = GoTogetherApp;
-			sourceTree = "<group>";
-		};
-		D6E496AE19866B5E00480AEE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D6E496AF19866B5E00480AEE /* GoTogetherApp-Info.plist */,
-				D6E496B019866B5E00480AEE /* InfoPlist.strings */,
-				D6E496B319866B5E00480AEE /* main.m */,
-				D6E496B519866B5E00480AEE /* GoTogetherApp-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D6E496CF19866B5E00480AEE /* GoTogetherAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,31 +681,6 @@
 				D6E496D219866B5E00480AEE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D6E496DF19866D3F00480AEE /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				D6C3896519A5EF09006965F0 /* Simple Chat */,
-				D6C3895219A5D7E2006965F0 /* MGSpotyViewController */,
-				D6C3894E19A5D742006965F0 /* TextFieldValidator */,
-				D6854CB0199B9144001FB65F /* FDTake */,
-				D686DA921994CDC200622C1D /* PaperCells */,
-				D686DA851994AAC300622C1D /* Settings */,
-				D680B5181993B6C40040B305 /* redis */,
-				D699239519939A12006A7DCC /* RESideMenu */,
-				D6E496EA1986751800480AEE /* hud */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		D6E496EA1986751800480AEE /* hud */ = {
-			isa = PBXGroup;
-			children = (
-				D6E496EB1986751800480AEE /* MBProgressHUD.h */,
-				D6E496EC1986751800480AEE /* MBProgressHUD.m */,
-			);
-			path = hud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,15 +760,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2816647219ABB87F00BEB808 /* profile@2x~iphone.png in Resources */,
+				2816646819ABB87F00BEB808 /* detail@2x~iphone.png in Resources */,
 				D651D4F119A5CD0B00889B11 /* GoogleMaps.bundle in Resources */,
-				D6E496BE19866B5E00480AEE /* Main_iPad.storyboard in Resources */,
-				D6E496C319866B5E00480AEE /* Images.xcassets in Resources */,
-				D6C3896419A5DDBB006965F0 /* error@2x~iphone.png in Resources */,
-				D6C3897319A5EF09006965F0 /* Previous.png in Resources */,
-				D6C3896319A5DDBB006965F0 /* error@2x~ipad.png in Resources */,
-				D686DA8E1994B78700622C1D /* Settings.bundle in Resources */,
-				D6E496BB19866B5E00480AEE /* Main_iPhone.storyboard in Resources */,
-				D6E496B219866B5E00480AEE /* InfoPlist.strings in Resources */,
+				2816643419ABB87F00BEB808 /* InfoPlist.strings in Resources */,
+				2816646519ABB87F00BEB808 /* check.png in Resources */,
+				2816646C19ABB87F00BEB808 /* logout@2x~iphone.png in Resources */,
+				2816647619ABB87F00BEB808 /* settings@2x~iphone.png in Resources */,
+				2816646719ABB87F00BEB808 /* dashboard@2x~iphone.png in Resources */,
+				2816646919ABB87F00BEB808 /* find@2x~iphone.png in Resources */,
+				2816647419ABB87F00BEB808 /* ride@2x~iphone.png in Resources */,
+				2816642919ABB87F00BEB808 /* Main_iPad.storyboard in Resources */,
+				2816647119ABB87F00BEB808 /* Person.png in Resources */,
+				2816643D19ABB87F00BEB808 /* Images.xcassets in Resources */,
+				2816647719ABB87F00BEB808 /* uncheck.png in Resources */,
+				2816642A19ABB87F00BEB808 /* Main_iPhone.storyboard in Resources */,
+				2816646419ABB87F00BEB808 /* add@2x~iphone.png in Resources */,
+				2816643519ABB87F00BEB808 /* GoTogetherApp-Info.plist in Resources */,
+				2816646619ABB87F00BEB808 /* cost@2x~iphone.png in Resources */,
+				2816646A19ABB87F00BEB808 /* icon_map.PNG in Resources */,
+				2816646D19ABB87F00BEB808 /* make@2x~iphone.png in Resources */,
+				2816647319ABB87F00BEB808 /* ride@2x~ipad.png in Resources */,
+				2816646E19ABB87F00BEB808 /* menu@2x~ipad.png in Resources */,
+				2816647519ABB87F00BEB808 /* Search.plist in Resources */,
+				2816647019ABB87F00BEB808 /* message@2x~iphone.png in Resources */,
+				2816646B19ABB87F00BEB808 /* locality.plist in Resources */,
+				2816647919ABB87F00BEB808 /* Settings.bundle in Resources */,
+				2816646F19ABB87F00BEB808 /* menu@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,51 +805,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6854CB6199B99C9001FB65F /* User.m in Sources */,
-				D6A1198219A4A06400FEE8E1 /* SearchRide.m in Sources */,
-				D6D00FAF1988FDBB00FBBDF1 /* GTRegisterViewController.m in Sources */,
-				D6C3897F19A5F400006965F0 /* GTSearchRideViewController.m in Sources */,
-				D6E496B419866B5E00480AEE /* main.m in Sources */,
-				D69923A919939A62006A7DCC /* GTRootViewController.m in Sources */,
-				D6C3897C19A5F266006965F0 /* GTInboxTableViewController.m in Sources */,
-				D6E496C119866B5E00480AEE /* GTLoginViewController.m in Sources */,
-				D686DA881994AAC300622C1D /* BAMSettings.m in Sources */,
-				D6C3896019A5D8A7006965F0 /* GTProfileViewController.m in Sources */,
-				D6C3895C19A5D7E2006965F0 /* MGSpotyViewController.m in Sources */,
-				D6E496B819866B5E00480AEE /* GTAppDelegate.m in Sources */,
-				D6CFEB9219A1E9A0001F74C2 /* NSManagedObject+JSON.m in Sources */,
-				D6854CB3199B9144001FB65F /* FDTakeController.m in Sources */,
-				D6C3895119A5D742006965F0 /* TextFieldValidator.m in Sources */,
-				D6A1197F19A4A06300FEE8E1 /* Ride.m in Sources */,
-				D6C3897119A5EF09006965F0 /* ChatInput.m in Sources */,
-				D6E496ED1986751800480AEE /* MBProgressHUD.m in Sources */,
-				D6D00FB5198906E200FBBDF1 /* GTRedisObject.m in Sources */,
-				D686DA8C1994AC1000622C1D /* GTSettingsViewController.m in Sources */,
-				D6C3895B19A5D7E2006965F0 /* UIImageView+LBBlurredImage.m in Sources */,
-				D686DA981994CDC200622C1D /* UIColor+BFPaperColors.m in Sources */,
-				D6C3895A19A5D7E2006965F0 /* UIImage+ImageEffects.m in Sources */,
-				D680B52A1993B6C40040B305 /* hiredis.c in Sources */,
-				D686DA9C1994E1C700622C1D /* GTDashboardViewController.m in Sources */,
-				D699239E19939A12006A7DCC /* UIViewController+RESideMenu.m in Sources */,
-				D6C3897219A5EF09006965F0 /* MessageCell.m in Sources */,
-				D69923A519939A38006A7DCC /* GTMyMenuViewController.m in Sources */,
-				D6C3897019A5EF09006965F0 /* ChatController.m in Sources */,
-				D680B52B1993B6C40040B305 /* net.c in Sources */,
-				D6C3897819A5F101006965F0 /* GTMessageViewController.m in Sources */,
-				D699239D19939A12006A7DCC /* RESideMenu.m in Sources */,
-				D6854CB9199B99FF001FB65F /* UserWorker.m in Sources */,
-				D6A1198519A4A06400FEE8E1 /* InterestedUsers.m in Sources */,
-				D69923A419939A38006A7DCC /* GTDriveMenuViewController.m in Sources */,
-				D699239C19939A12006A7DCC /* RECommonFunctions.m in Sources */,
-				D6A1197C19A4804400FEE8E1 /* GTShowRouteViewController.m in Sources */,
-				D670DF9A199A44EC000F0640 /* database.xcdatamodeld in Sources */,
-				D680B52D1993B6C40040B305 /* ObjCHiredis.m in Sources */,
-				D686DA971994CDC200622C1D /* BFPaperTableViewCell.m in Sources */,
-				D6A1197919A4765B00FEE8E1 /* GTCreateRideViewController.m in Sources */,
-				D680B52C1993B6C40040B305 /* sds.c in Sources */,
-				D6C3897419A5EF09006965F0 /* TopBar.m in Sources */,
-				D680B5291993B6C40040B305 /* dict.c in Sources */,
-				D680B5281993B6C40040B305 /* async.c in Sources */,
+				2816645419ABB87F00BEB808 /* TextFieldValidator.m in Sources */,
+				2816644F19ABB87F00BEB808 /* BAMSettings.m in Sources */,
+				2816644B19ABB87F00BEB808 /* ObjCHiredis.m in Sources */,
+				2816644C19ABB87F00BEB808 /* RECommonFunctions.m in Sources */,
+				2816645D19ABB87F00BEB808 /* SearchRide.m in Sources */,
+				2816645019ABB87F00BEB808 /* ChatController.m in Sources */,
+				2816643B19ABB87F00BEB808 /* GTRegisterViewController.m in Sources */,
+				2816645819ABB87F00BEB808 /* database.xcdatamodeld in Sources */,
+				2816645C19ABB87F00BEB808 /* Ride.m in Sources */,
+				2816643219ABB87F00BEB808 /* GTShowRouteViewController.m in Sources */,
+				2816644119ABB87F00BEB808 /* UIImage+ImageEffects.m in Sources */,
+				2816643119ABB87F00BEB808 /* GTSearchRideViewController.m in Sources */,
+				2816642E19ABB87F00BEB808 /* GTMapViewController.m in Sources */,
+				2816645119ABB87F00BEB808 /* ChatInput.m in Sources */,
+				2816644D19ABB87F00BEB808 /* RESideMenu.m in Sources */,
+				2816644719ABB87F00BEB808 /* dict.c in Sources */,
+				2816645919ABB87F00BEB808 /* GTSearchRideTableViewCell.m in Sources */,
+				2816645519ABB87F00BEB808 /* main.m in Sources */,
+				2816647819ABB87F00BEB808 /* GTSettingsViewController.m in Sources */,
+				2816642F19ABB87F00BEB808 /* GTRideMatchTableViewController.m in Sources */,
+				2816644619ABB87F00BEB808 /* async.c in Sources */,
+				2816642C19ABB87F00BEB808 /* GTDashboardViewController.m in Sources */,
+				2816645719ABB87F00BEB808 /* GTMessageViewController.m in Sources */,
+				2816644219ABB87F00BEB808 /* UIImageView+LBBlurredImage.m in Sources */,
+				2816645B19ABB87F00BEB808 /* NSManagedObject+JSON.m in Sources */,
+				2816644819ABB87F00BEB808 /* hiredis.c in Sources */,
+				2816643819ABB87F00BEB808 /* GTLoginViewController.m in Sources */,
+				2816645F19ABB87F00BEB808 /* UserWorker.m in Sources */,
+				2816646219ABB87F00BEB808 /* GTProfileViewController.m in Sources */,
+				2816644A19ABB87F00BEB808 /* sds.c in Sources */,
+				2816643019ABB87F00BEB808 /* GTSearchFriendsViewController.m in Sources */,
+				2816644E19ABB87F00BEB808 /* UIViewController+RESideMenu.m in Sources */,
+				2816644519ABB87F00BEB808 /* UIColor+BFPaperColors.m in Sources */,
+				2816646319ABB87F00BEB808 /* RegexKitLite.m in Sources */,
+				2816643919ABB87F00BEB808 /* GTMyMenuViewController.m in Sources */,
+				2816643E19ABB87F00BEB808 /* FDTakeController.m in Sources */,
+				2816645E19ABB87F00BEB808 /* User.m in Sources */,
+				2816642B19ABB87F00BEB808 /* GTCreateRideViewController.m in Sources */,
+				2816646019ABB87F00BEB808 /* Place.m in Sources */,
+				2816643619ABB87F00BEB808 /* GTAppDelegate.m in Sources */,
+				2816642D19ABB87F00BEB808 /* GTDatePickerViewController.m in Sources */,
+				2816644019ABB87F00BEB808 /* MBProgressHUD.m in Sources */,
+				2816646119ABB87F00BEB808 /* PlaceMark.m in Sources */,
+				2816645A19ABB87F00BEB808 /* InterestedUsers.m in Sources */,
+				2816643719ABB87F00BEB808 /* GTDriveMenuViewController.m in Sources */,
+				2816644319ABB87F00BEB808 /* MGSpotyViewController.m in Sources */,
+				2816645319ABB87F00BEB808 /* TopBar.m in Sources */,
+				2816645619ABB87F00BEB808 /* GTInboxTableViewController.m in Sources */,
+				2816644419ABB87F00BEB808 /* BFPaperTableViewCell.m in Sources */,
+				2816643319ABB87F00BEB808 /* GTVerifyCarViewController.m in Sources */,
+				2816644919ABB87F00BEB808 /* net.c in Sources */,
+				2816645219ABB87F00BEB808 /* MessageCell.m in Sources */,
+				2816643A19ABB87F00BEB808 /* GTRedisObject.m in Sources */,
+				2816643C19ABB87F00BEB808 /* GTRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,28 +881,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D6E496B019866B5E00480AEE /* InfoPlist.strings */ = {
+		2816638819ABB87F00BEB808 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6E496B119866B5E00480AEE /* en */,
+				2816638919ABB87F00BEB808 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		D6E496B919866B5E00480AEE /* Main_iPhone.storyboard */ = {
+		2816638A19ABB87F00BEB808 /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6E496BA19866B5E00480AEE /* Base */,
+				2816638B19ABB87F00BEB808 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		D6E496BC19866B5E00480AEE /* Main_iPad.storyboard */ = {
+		281663A019ABB87F00BEB808 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6E496BD19866B5E00480AEE /* Base */,
+				281663A119ABB87F00BEB808 /* en */,
 			);
-			name = Main_iPad.storyboard;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		D6E496D219866B5E00480AEE /* InfoPlist.strings */ = {
@@ -989,12 +1125,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D670DF98199A44EC000F0640 /* database.xcdatamodeld */ = {
+		281663F719ABB87F00BEB808 /* database.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D670DF99199A44EC000F0640 /* database.xcdatamodel */,
+				281663F819ABB87F00BEB808 /* database.xcdatamodel */,
 			);
-			currentVersion = D670DF99199A44EC000F0640 /* database.xcdatamodel */;
+			currentVersion = 281663F819ABB87F00BEB808 /* database.xcdatamodel */;
 			path = database.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

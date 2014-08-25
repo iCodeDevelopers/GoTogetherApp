@@ -54,6 +54,7 @@
 			[self presentMenu:@"settings"];
 			break;
 		case 3: //Logout
+            [self presentMenu:@"RegisterNav"];
 			break;
 		default:
 			break;
@@ -108,6 +109,10 @@
 	NSArray *titles = @[@"MY RIDES", @"ME", @"SETTINGS", @"LOG OUT"];
 	NSArray *images = @[@"dashboard", @"profile", @"settings", @"logout"];
 	cell.textLabel.text = titles[indexPath.row];
+    
+    if([cell.textLabel.text isEqualToString:@"ME"])
+        cell.userInteractionEnabled = NO;
+    
 	cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
 
 	return cell;

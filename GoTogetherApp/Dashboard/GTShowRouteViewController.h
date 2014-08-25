@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface GTShowRouteViewController : UIViewController
+
+@property (nonatomic,retain) IBOutlet MKMapView *map;
+@property (nonatomic,weak) IBOutlet UILabel *addrs;
 
 @end

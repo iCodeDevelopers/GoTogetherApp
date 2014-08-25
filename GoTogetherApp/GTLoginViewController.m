@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	[self.navigationItem setHidesBackButton:YES];
+	//[self.navigationItem setHidesBackButton:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated

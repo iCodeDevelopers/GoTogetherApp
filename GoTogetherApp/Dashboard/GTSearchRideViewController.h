@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTMapViewController.h"
 
-@interface GTSearchRideViewController : UIViewController <UISearchBarDelegate, UISearchDisplayDelegate>
+@interface GTSearchRideViewController : UIViewController <LocationDelegate>
+
+@property (nonatomic, weak) IBOutlet UITextField *tfTo;
 
 @end

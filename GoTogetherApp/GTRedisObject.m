@@ -43,11 +43,11 @@
 		self.redis = nil;
 	}
 
-	self.redis = [ObjCHiredis redis:@"10.249.21.32" on:@(6379)];
-//	self.redis = [ObjCHiredis redis:@"pub-redis-10303.us-east-1-1.2.ec2.garantiadata.com"
-//																			on:@(10303)];
-//
-//	retVal = [self.redis command:@"AUTH loveme1234"];
+//	self.redis = [ObjCHiredis redis];
+	self.redis = [ObjCHiredis redis:@"pub-redis-10303.us-east-1-1.2.ec2.garantiadata.com"
+																			on:@(10303)];
+
+	retVal = [self.redis command:@"AUTH loveme1234"];
 
 	if (self.redis || [retVal isEqualToString:@"OK"]) {
 		NSLog(@"Connected to redis server.");

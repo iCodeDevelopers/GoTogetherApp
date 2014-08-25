@@ -17,4 +17,8 @@
 
 + (void)doLogin:(NSArray *)inputs;
 
++ (NSArray *)getRides;
+
++ (BOOL)doCreateASearch:(NSDictionary *)input;
+
 @end

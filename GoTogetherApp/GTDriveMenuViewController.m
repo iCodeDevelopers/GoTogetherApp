@@ -7,6 +7,25 @@
 //
 
 #import "GTDriveMenuViewController.h"
+@interface MenuTableViewCell : UITableViewCell
+@end
+
+@implementation MenuTableViewCell
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    CGRect rect = self.imageView.frame;
+    rect.origin.x = CGRectGetWidth(self.contentView.bounds)-CGRectGetWidth(self.imageView.bounds) - 10;
+    [self.imageView setFrame:rect];
+    
+    rect = self.textLabel.frame;
+    rect.origin.x = CGRectGetWidth(self.contentView.bounds)-CGRectGetWidth(self.imageView.bounds)-CGRectGetWidth(self.textLabel.bounds) - 25;
+    [self.textLabel setFrame:rect];
+}
+
+@end
 
 @interface GTDriveMenuViewController ()
 
@@ -55,6 +74,9 @@
 			break;
 		case 3: //Cost
 			break;
+        case 4: //Cost
+            [self presentMenu:@"search"];
+			break;
 		default:
 			break;
 	}
@@ -86,27 +108,27 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-	return 4;
+	return 5;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (MenuTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	static NSString *cellIdentifier = @"Cell";
 
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+	MenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 
 	if (cell == nil) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+		cell = [[MenuTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
 		cell.backgroundColor = [UIColor clearColor];
 		cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
 		cell.textLabel.textAlignment = NSTextAlignmentRight;
-		cell.textLabel.textColor = [UIColor whiteColor];
+		cell.textLabel.textColor = MENU_TEXT_COLOR;
 		cell.textLabel.highlightedTextColor = [UIColor lightGrayColor];
 		cell.selectedBackgroundView = [[UIView alloc] init];
 	}
 
-	NSArray *titles = @[@"NEW RIDE", @"FIND RIDE", @"MESSAGES", @"COST"];
-	NSArray *images = @[@"plan", @"searchride", @"messages", @"cost"];
+	NSArray *titles = @[@"ADD", @"SEARCH", @"MESSAGES", @"COST", @"MAKE A RIDE"];
+	NSArray *images = @[@"add", @"find", @"message", @"cost",@"make"];
 	cell.textLabel.text = titles[indexPath.row];
 	cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
 
