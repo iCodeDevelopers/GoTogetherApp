@@ -218,9 +218,12 @@
 	NSMutableArray * buildArray = [NSMutableArray arrayWithCapacity:size];
 	for (NSUInteger i = 0; i < size; i++) {
 		if (vec[i] != NULL) {
-			[buildArray addObject:[self parseReply:vec[i]]];
+			id o = [self parseReply:vec[i]];
+			if (o) {
+				[buildArray addObject:o];
+			}
 		} else {
-			[buildArray addObject:nil];
+			//[buildArray addObject:nil];
 		}
 		
 	}
@@ -262,6 +265,8 @@
 		} else if ([o isKindOfClass:[NSNumber class]]) {
 			vector[i] = (char*)[[o stringValue] UTF8String];
 		}
+
+		i++;
 	}
 
 	return (const char**)vector;
