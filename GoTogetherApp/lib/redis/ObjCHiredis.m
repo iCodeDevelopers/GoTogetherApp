@@ -227,6 +227,10 @@
 	return [NSArray arrayWithArray:buildArray];
 }
 
+/*
+ Subrat - Added a patch
+ It was crashing with BAD Pointer for any same string
+
 - (const char**)cVectorFromArray:(NSArray*)array
 {
 	char ** vector = malloc(sizeof(char*) * (int)[array count]);
@@ -240,6 +244,26 @@
 			vector[i] = (char*)[[o stringValue] UTF8String];
 		}
 	}
+	return (const char**)vector;
+}
+
+*/
+
+- (const char**)cVectorFromArray:(NSArray*)array
+{
+	char ** vector = malloc(sizeof(char*) * (int)[array count]);
+	int i = 0;
+	int count = [array count];
+	id o;
+	while (i < count) {
+		o = [array objectAtIndex:i];
+		if ([o isKindOfClass:[NSString class]]) {
+			vector[i] = (char*)[o UTF8String];
+		} else if ([o isKindOfClass:[NSNumber class]]) {
+			vector[i] = (char*)[[o stringValue] UTF8String];
+		}
+	}
+
 	return (const char**)vector;
 }
 
