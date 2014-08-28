@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="D5R-A1-5d8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="D5R-A1-5d8">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="subrat" borderStyle="line" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z11-vd-kKp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="subrat" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z11-vd-kKp">
                                 <rect key="frame" x="73" y="147" width="175" height="30"/>
                                 <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -41,7 +41,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="RPf-vf-HlB"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pass" borderStyle="line" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0s-dx-ik1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pass" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0s-dx-ik1">
                                 <rect key="frame" x="73" y="192" width="175" height="30"/>
                                 <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.72941176470000002" green="0.7725490196" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.7843137255" green="0.81960784310000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="7z9-uZ-HVa">
                         <barButtonItem key="backBarButtonItem" title="Back" id="v6L-2u-KEp"/>
@@ -71,179 +71,21 @@
             </objects>
             <point key="canvasLocation" x="513" y="76"/>
         </scene>
-        <!--Register View Controller - Registration-->
+        <!--Register View Controller - Login To Your Account-->
         <scene sceneID="z8G-7W-8qF">
             <objects>
                 <tableViewController storyboardIdentifier="Register" id="LeO-gy-lh2" customClass="GTRegisterViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="d95-u5-eff">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="d95-u5-eff">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.72941176470000002" green="0.7725490196" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection id="Pwg-SS-hyW">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="tKO-IW-HGZ">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tKO-IW-HGZ" id="IVD-NJ-See">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5f-9D-Jcj">
-                                                    <rect key="frame" x="10" y="10" width="70" height="70"/>
-                                                    <color key="backgroundColor" red="0.67450980390000004" green="0.78039215689999997" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vt-p9-LBX">
-                                                    <rect key="frame" x="10" y="80" width="95" height="25"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="Upload Photo">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="doUploadClicked:" destination="LeO-gy-lh2" eventType="touchUpInside" id="DHX-ef-az2"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi Buddy! Register with us and enjoy your ride with your friends :)" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="197" translatesAutoresizingMaskIntoConstraints="NO" id="YkF-mF-uZk">
-                                                    <rect key="frame" x="97" y="6" width="197" height="65"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Go Green" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="85" translatesAutoresizingMaskIntoConstraints="NO" id="hdr-W5-grP">
-                                                    <rect key="frame" x="209" y="79" width="85" height="19"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                                    <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection id="edd-gm-P92">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="146" id="7Ph-X4-DYA">
-                                        <rect key="frame" x="0.0" y="219" width="320" height="146"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Ph-X4-DYA" id="6zr-3y-Qc9">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="User ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFq-If-zVW">
-                                                    <rect key="frame" x="10" y="15" width="300" height="30"/>
-                                                    <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="LeO-gy-lh2" id="Frr-pf-sBQ"/>
-                                                    </connections>
-                                                </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Nf-iR-04w">
-                                                    <rect key="frame" x="10" y="57" width="300" height="30"/>
-                                                    <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" secureTextEntry="YES"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="LeO-gy-lh2" id="gZ5-i1-Vbt"/>
-                                                    </connections>
-                                                </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vff-Ff-Mfl">
-                                                    <rect key="frame" x="10" y="101" width="300" height="30"/>
-                                                    <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" secureTextEntry="YES"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="LeO-gy-lh2" id="hbo-1k-bh8"/>
-                                                    </connections>
-                                                </textField>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="User Details" id="8aH-bR-WIW">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="200" id="hNt-e2-aJI">
-                                        <rect key="frame" x="0.0" y="413" width="320" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hNt-e2-aJI" id="ytz-td-NTB">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-Oo-715">
-                                                    <rect key="frame" x="10" y="15" width="300" height="30"/>
-                                                    <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="LeO-gy-lh2" id="5Rp-MF-XJF"/>
-                                                    </connections>
-                                                </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1f5-Oj-Yvg">
-                                                    <rect key="frame" x="10" y="54" width="300" height="30"/>
-                                                    <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="LeO-gy-lh2" id="DBq-nZ-1S4"/>
-                                                    </connections>
-                                                </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Location" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFY-il-yiw">
-                                                    <rect key="frame" x="10" y="92" width="300" height="30"/>
-                                                    <color key="textColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="LeO-gy-lh2" id="5Fj-vS-6Rr"/>
-                                                    </connections>
-                                                </textField>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-F1-xST">
-                                                    <rect key="frame" x="10" y="131" width="300" height="29"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <segments>
-                                                        <segment title="Male"/>
-                                                        <segment title="Female"/>
-                                                    </segments>
-                                                    <color key="tintColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                </segmentedControl>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.81960784313725488" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="LeO-gy-lh2" id="kdx-dn-t3d"/>
                             <outlet property="delegate" destination="LeO-gy-lh2" id="VL3-Tg-thr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Registration" id="qcV-J2-VzG">
-                        <barButtonItem key="leftBarButtonItem" title="Sign In" id="rOk-bQ-xI9">
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="vXZ-lx-hvc" kind="push" identifier="login" id="f1H-pD-MzZ"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Register" id="rda-fZ-htz">
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="doRegister:" destination="LeO-gy-lh2" id="4GL-NU-rys"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="photoView" destination="J5f-9D-Jcj" id="Ftl-d4-qZN"/>
-                        <outlet property="tfConfirmPassword" destination="vff-Ff-Mfl" id="nwe-ou-s4e"/>
-                        <outlet property="tfFirstName" destination="vj4-Oo-715" id="o9p-z4-uMP"/>
-                        <outlet property="tfLastName" destination="1f5-Oj-Yvg" id="vhj-AJ-32l"/>
-                        <outlet property="tfPassword" destination="5Nf-iR-04w" id="9op-np-8iF"/>
-                        <outlet property="tfUserID" destination="eFq-If-zVW" id="zIt-tZ-K1M"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Login To Your Account" id="qcV-J2-VzG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gQ-QN-zAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

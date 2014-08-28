@@ -9,16 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Constants.h"
 
-@interface GTRegisterViewController : UITableViewController <UITextFieldDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *tfUserID;
-@property (weak, nonatomic) IBOutlet UITextField *tfFirstName;
-@property (weak, nonatomic) IBOutlet UITextField *tfLastName;
-@property (weak, nonatomic) IBOutlet UITextField *tfPassword;
-@property (weak, nonatomic) IBOutlet UITextField *tfConfirmPassword;
-
-@property (weak, nonatomic) IBOutlet UIImageView *photoView;
-
-- (IBAction)doRegister:(UIBarButtonItem *)sender;
-- (IBAction)doUploadClicked:(id)sender;
+@interface GTRegisterViewController : UITableViewController
 
 @end

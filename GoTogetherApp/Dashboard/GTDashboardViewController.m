@@ -23,6 +23,23 @@
 {
 	//[self.view setBackgroundColor:DASHBOARD_BG_COLOR];
 	//[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+
+	[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:59/255.f green:76/255.f blue:86/255.f alpha:1.f]];
+
+	[[UINavigationBar appearance] setTitleTextAttributes:
+	 [NSDictionary dictionaryWithObjectsAndKeys:
+	  [UIColor whiteColor],
+	  UITextAttributeTextColor,
+	  [UIColor clearColor],
+	  UITextAttributeTextShadowColor,
+	  [UIFont fontWithName:@"Helvetica-Bold" size:20.0],
+	  UITextAttributeFont,
+	  nil]];
+}
+
+- (void)viewDidLoad
+{
+	[super viewDidLoad];
 }
 
 - (void)viewDidAppear:(BOOL)animated

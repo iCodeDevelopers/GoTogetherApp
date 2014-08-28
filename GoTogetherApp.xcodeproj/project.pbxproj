@@ -88,6 +88,19 @@
 		2816647719ABB87F00BEB808 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 2816642419ABB87F00BEB808 /* uncheck.png */; };
 		2816647819ABB87F00BEB808 /* GTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816642719ABB87F00BEB808 /* GTSettingsViewController.m */; };
 		2816647919ABB87F00BEB808 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2816642819ABB87F00BEB808 /* Settings.bundle */; };
+		D646225A19AF1F2A0057B379 /* ASTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D646224C19AF1F2A0057B379 /* ASTextField.m */; };
+		D646225B19AF1F2A0057B379 /* round_textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = D646224F19AF1F2A0057B379 /* round_textfield.png */; };
+		D646225C19AF1F2A0057B379 /* round_textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225019AF1F2A0057B379 /* round_textfield@2x.png */; };
+		D646225D19AF1F2A0057B379 /* text_field.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225119AF1F2A0057B379 /* text_field.png */; };
+		D646225E19AF1F2A0057B379 /* text_field@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225219AF1F2A0057B379 /* text_field@2x.png */; };
+		D646225F19AF1F2A0057B379 /* password_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225419AF1F2A0057B379 /* password_icon.png */; };
+		D646226019AF1F2A0057B379 /* password_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225519AF1F2A0057B379 /* password_icon@2x.png */; };
+		D646226119AF1F2A0057B379 /* user_name_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225619AF1F2A0057B379 /* user_name_icon.png */; };
+		D646226219AF1F2A0057B379 /* user_name_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225719AF1F2A0057B379 /* user_name_icon@2x.png */; };
+		D646226319AF1F2A0057B379 /* login_button.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225819AF1F2A0057B379 /* login_button.png */; };
+		D646226419AF1F2A0057B379 /* login_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D646225919AF1F2A0057B379 /* login_button@2x.png */; };
+		D646226819AF35920057B379 /* confirm_password_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D646226719AF35920057B379 /* confirm_password_icon@2x.png */; };
+		D646227019AF42520057B379 /* JSQFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D646226F19AF42520057B379 /* JSQFlatButton.m */; };
 		D651D4D919A5C8CE00889B11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D651D4D819A5C8CE00889B11 /* AVFoundation.framework */; };
 		D651D4DB19A5C8E600889B11 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D651D4DA19A5C8E600889B11 /* CoreLocation.framework */; };
 		D651D4DD19A5C8F100889B11 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D651D4DC19A5C8F100889B11 /* CoreText.framework */; };
@@ -261,6 +274,21 @@
 		2816642619ABB87F00BEB808 /* GTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSettingsViewController.h; sourceTree = "<group>"; };
 		2816642719ABB87F00BEB808 /* GTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSettingsViewController.m; sourceTree = "<group>"; };
 		2816642819ABB87F00BEB808 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D646224B19AF1F2A0057B379 /* ASTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTextField.h; sourceTree = "<group>"; };
+		D646224C19AF1F2A0057B379 /* ASTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTextField.m; sourceTree = "<group>"; };
+		D646224F19AF1F2A0057B379 /* round_textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_textfield.png; sourceTree = "<group>"; };
+		D646225019AF1F2A0057B379 /* round_textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_textfield@2x.png"; sourceTree = "<group>"; };
+		D646225119AF1F2A0057B379 /* text_field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_field.png; sourceTree = "<group>"; };
+		D646225219AF1F2A0057B379 /* text_field@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text_field@2x.png"; sourceTree = "<group>"; };
+		D646225419AF1F2A0057B379 /* password_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_icon.png; sourceTree = "<group>"; };
+		D646225519AF1F2A0057B379 /* password_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password_icon@2x.png"; sourceTree = "<group>"; };
+		D646225619AF1F2A0057B379 /* user_name_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_name_icon.png; sourceTree = "<group>"; };
+		D646225719AF1F2A0057B379 /* user_name_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_name_icon@2x.png"; sourceTree = "<group>"; };
+		D646225819AF1F2A0057B379 /* login_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_button.png; sourceTree = "<group>"; };
+		D646225919AF1F2A0057B379 /* login_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_button@2x.png"; sourceTree = "<group>"; };
+		D646226719AF35920057B379 /* confirm_password_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "confirm_password_icon@2x.png"; sourceTree = "<group>"; };
+		D646226E19AF42520057B379 /* JSQFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQFlatButton.h; sourceTree = "<group>"; };
+		D646226F19AF42520057B379 /* JSQFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQFlatButton.m; sourceTree = "<group>"; };
 		D651D4D819A5C8CE00889B11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D651D4DA19A5C8E600889B11 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D651D4DC19A5C8F100889B11 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -394,6 +422,8 @@
 		281663B319ABB87F00BEB808 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				D646226919AF423D0057B379 /* JSQFlatButton */,
+				D646224A19AF1F2A0057B379 /* ASTextField */,
 				281663B419ABB87F00BEB808 /* FDTake */,
 				281663B719ABB87F00BEB808 /* GoogleMap */,
 				281663B919ABB87F00BEB808 /* hud */,
@@ -621,6 +651,59 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		D646224A19AF1F2A0057B379 /* ASTextField */ = {
+			isa = PBXGroup;
+			children = (
+				D646224B19AF1F2A0057B379 /* ASTextField.h */,
+				D646224C19AF1F2A0057B379 /* ASTextField.m */,
+				D646224D19AF1F2A0057B379 /* Resources */,
+			);
+			path = ASTextField;
+			sourceTree = "<group>";
+		};
+		D646224D19AF1F2A0057B379 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D646224E19AF1F2A0057B379 /* backgrounds */,
+				D646225319AF1F2A0057B379 /* icon */,
+				D646225819AF1F2A0057B379 /* login_button.png */,
+				D646225919AF1F2A0057B379 /* login_button@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D646224E19AF1F2A0057B379 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				D646224F19AF1F2A0057B379 /* round_textfield.png */,
+				D646225019AF1F2A0057B379 /* round_textfield@2x.png */,
+				D646225119AF1F2A0057B379 /* text_field.png */,
+				D646225219AF1F2A0057B379 /* text_field@2x.png */,
+			);
+			path = backgrounds;
+			sourceTree = "<group>";
+		};
+		D646225319AF1F2A0057B379 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				D646226719AF35920057B379 /* confirm_password_icon@2x.png */,
+				D646225419AF1F2A0057B379 /* password_icon.png */,
+				D646225519AF1F2A0057B379 /* password_icon@2x.png */,
+				D646225619AF1F2A0057B379 /* user_name_icon.png */,
+				D646225719AF1F2A0057B379 /* user_name_icon@2x.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		D646226919AF423D0057B379 /* JSQFlatButton */ = {
+			isa = PBXGroup;
+			children = (
+				D646226E19AF42520057B379 /* JSQFlatButton.h */,
+				D646226F19AF42520057B379 /* JSQFlatButton.m */,
+			);
+			path = JSQFlatButton;
+			sourceTree = "<group>";
+		};
 		D6E4969B19866B5E00480AEE = {
 			isa = PBXGroup;
 			children = (
@@ -765,28 +848,39 @@
 				D651D4F119A5CD0B00889B11 /* GoogleMaps.bundle in Resources */,
 				2816643419ABB87F00BEB808 /* InfoPlist.strings in Resources */,
 				2816646519ABB87F00BEB808 /* check.png in Resources */,
+				D646225D19AF1F2A0057B379 /* text_field.png in Resources */,
 				2816646C19ABB87F00BEB808 /* logout@2x~iphone.png in Resources */,
+				D646226319AF1F2A0057B379 /* login_button.png in Resources */,
 				2816647619ABB87F00BEB808 /* settings@2x~iphone.png in Resources */,
 				2816646719ABB87F00BEB808 /* dashboard@2x~iphone.png in Resources */,
 				2816646919ABB87F00BEB808 /* find@2x~iphone.png in Resources */,
+				D646226419AF1F2A0057B379 /* login_button@2x.png in Resources */,
 				2816647419ABB87F00BEB808 /* ride@2x~iphone.png in Resources */,
+				D646226819AF35920057B379 /* confirm_password_icon@2x.png in Resources */,
 				2816642919ABB87F00BEB808 /* Main_iPad.storyboard in Resources */,
 				2816647119ABB87F00BEB808 /* Person.png in Resources */,
 				2816643D19ABB87F00BEB808 /* Images.xcassets in Resources */,
+				D646225E19AF1F2A0057B379 /* text_field@2x.png in Resources */,
 				2816647719ABB87F00BEB808 /* uncheck.png in Resources */,
 				2816642A19ABB87F00BEB808 /* Main_iPhone.storyboard in Resources */,
 				2816646419ABB87F00BEB808 /* add@2x~iphone.png in Resources */,
+				D646226119AF1F2A0057B379 /* user_name_icon.png in Resources */,
 				2816643519ABB87F00BEB808 /* GoTogetherApp-Info.plist in Resources */,
 				2816646619ABB87F00BEB808 /* cost@2x~iphone.png in Resources */,
 				2816646A19ABB87F00BEB808 /* icon_map.PNG in Resources */,
 				2816646D19ABB87F00BEB808 /* make@2x~iphone.png in Resources */,
 				2816647319ABB87F00BEB808 /* ride@2x~ipad.png in Resources */,
+				D646225C19AF1F2A0057B379 /* round_textfield@2x.png in Resources */,
 				2816646E19ABB87F00BEB808 /* menu@2x~ipad.png in Resources */,
 				2816647519ABB87F00BEB808 /* Search.plist in Resources */,
 				2816647019ABB87F00BEB808 /* message@2x~iphone.png in Resources */,
 				2816646B19ABB87F00BEB808 /* locality.plist in Resources */,
 				2816647919ABB87F00BEB808 /* Settings.bundle in Resources */,
+				D646225B19AF1F2A0057B379 /* round_textfield.png in Resources */,
+				D646226019AF1F2A0057B379 /* password_icon@2x.png in Resources */,
 				2816646F19ABB87F00BEB808 /* menu@2x~iphone.png in Resources */,
+				D646226219AF1F2A0057B379 /* user_name_icon@2x.png in Resources */,
+				D646225F19AF1F2A0057B379 /* password_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +917,7 @@
 				2816644719ABB87F00BEB808 /* dict.c in Sources */,
 				2816645919ABB87F00BEB808 /* GTSearchRideTableViewCell.m in Sources */,
 				2816645519ABB87F00BEB808 /* main.m in Sources */,
+				D646225A19AF1F2A0057B379 /* ASTextField.m in Sources */,
 				2816647819ABB87F00BEB808 /* GTSettingsViewController.m in Sources */,
 				2816642F19ABB87F00BEB808 /* GTRideMatchTableViewController.m in Sources */,
 				2816644619ABB87F00BEB808 /* async.c in Sources */,
@@ -855,6 +950,7 @@
 				2816645619ABB87F00BEB808 /* GTInboxTableViewController.m in Sources */,
 				2816644419ABB87F00BEB808 /* BFPaperTableViewCell.m in Sources */,
 				2816643319ABB87F00BEB808 /* GTVerifyCarViewController.m in Sources */,
+				D646227019AF42520057B379 /* JSQFlatButton.m in Sources */,
 				2816644919ABB87F00BEB808 /* net.c in Sources */,
 				2816645219ABB87F00BEB808 /* MessageCell.m in Sources */,
 				2816643A19ABB87F00BEB808 /* GTRedisObject.m in Sources */,
